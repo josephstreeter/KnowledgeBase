@@ -44,15 +44,6 @@ For example:
 ```
 scp admin@host.domain.com:/home/admin/script.sh script.sh
 ```
-## Copy a Directory
-The SCP command for recursivly copying a directory from a local path to a remote host.
-```
-scp -r host:path/directory path
-```
-For example:
-```
-scp -r admin@host.domain.com:/home/admin/scripts .
-```
 # Configure SSH
 ## Execute Graphical Applications Remotely
 Enabling X11 Forwarding and Agent Forwarding will allow a user to execute a graphical application on the remote host.
