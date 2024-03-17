@@ -5,8 +5,10 @@ This serves as my personal knowledge base. An online notebook of sorts for infor
 ---
 ### PowerShell
 ### Docker
-### Secure Shell
+### [Secure Shell](#secure-shell)
 ### Git
 ### SQL
 ### Unifi Networking
 ### Home Assistant
+
+[Heading IDs](#heading-ids)
