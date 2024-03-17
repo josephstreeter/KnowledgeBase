@@ -25,25 +25,6 @@ In the case of source control services, you may get the following error. This is
 remote: Shell access is not supported.
 ```
 
-# Secure File Copy - SCP
-SCP uses the SSH protocol to securly copy files between systems. SCP is often included as part of the SSH client application.
-## Copy a file
-The SCP command for copying a file from a local path to a remote host
-```
-scp file host:path
-```
-For example:
-```
-scp script.sh admin@host.domain.com:/home/admin/
-```
-The SCP command for copying a file from the remote host to a local path.
-```
-scp host:file path
-```
-For example:
-```
-scp admin@host.domain.com:/home/admin/script.sh script.sh
-```
 # Configure SSH
 ## Execute Graphical Applications Remotely
 Enabling X11 Forwarding and Agent Forwarding will allow a user to execute a graphical application on the remote host.
