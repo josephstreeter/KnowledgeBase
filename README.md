@@ -5,7 +5,7 @@ This serves as my personal knowledge base. An online notebook of sorts for infor
 ---
 ### PowerShell
 ### Docker
-### [Secure Shell](#secure-shell)
+### [Secure Shell](./ssh/SecureShell.md)
 ### Git
 ### SQL
 ### Unifi Networking
