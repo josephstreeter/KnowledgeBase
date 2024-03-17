@@ -3,7 +3,9 @@ This serves as my personal knowledge base. An online notebook of sorts for infor
 
 ## Topics
 ### PowerShell
+### Docker
 ### Secure Shell
 ### Git
 ### SQL
 ### Unifi Networking
+### Home Assistant
