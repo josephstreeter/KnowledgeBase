@@ -1,1 +1,33 @@
+# SSH Keys
+SSH Keys are asymetric cryprographic keys, or key pairs, that are used for authorization and authentication. 
+A key pair consists of a private key (Identification key) and a public key (Authorization key). The owner of a key pair is authorized access to a resource by installing that user's public key (Authorization) on that resource. 
+The user then uses the private key (Identity) to authenticate to that resource. The private key is protected by a passowrd or passphrase that only the owner knows. A users private key's are to be protected the same as passwords.
 
+SSH keys may be used to interactivly access a host or service or can be used to privide authorization and authentication to automated processes.
+This is typically accomplised by creating a key pair without a password. 
+
+# Host Keys
+Host keys represent a server's identity and are used by the client to authenticate that server's identity.
+The first time a client accesses a server, the client will prompt the user, displaying a hash of the server's host key and asking the user to expliicitly accept it. 
+```
+$ ssh -t git@ssh.github.com
+The authenticity of host 'ssh.github.com (140.82.114.36)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+If the host key stored in 'known_hosts' does not match the one presented to the client by the server the client will promp the usuer, asking if the user wants to continue.
+```
+$ ssh -t git@ssh.github.com
+The authenticity of host 'ssh.github.com (140.82.114.36)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:11: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? no
+Host key verification failed.
+```
+
+# SSH Key Creation
+
+
+# Authorized Keys
