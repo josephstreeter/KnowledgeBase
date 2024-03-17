@@ -45,5 +45,4 @@ dpkg-reconfigure openssh-server
 ```
 - Update ssh client(s) ~/.ssh/known_hosts files with the new hash
 
-## SSH Key pair Creation
 
