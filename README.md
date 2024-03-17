@@ -3,11 +3,13 @@ This serves as my personal knowledge base. An online notebook of sorts for infor
 
 ## Topics
 ---
-### PowerShell
-### Docker
+### [PowerShell](./powershell/powershell.md)
+### [Docker](./docker/docker.md)
 ### [Secure Shell](./ssh/SecureShell.md)
-### Git
-### SQL
-### Unifi Networking
-### Home Lab
-### Home Assistant
+### [Git](./git/git.md)
+### [SQL](./sql/sql.md)
+### [Unifi Networking](./unifi.md)
+### [Home Lab](./homelab/homelab.md)
+### [Home Assistant](./homeassistant/homeassistant.md)
+### [Terraform](./terraform/terraform.md)
+### [Ansible](./ansible/andsible.md)
