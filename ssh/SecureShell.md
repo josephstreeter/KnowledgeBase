@@ -4,6 +4,8 @@ Secure Shell (SSH) is a protocol that allows a user to securly access a remote s
 ---
 [SSH Keys](./SSHKeys.md)
 [Secure File Copy (SCP)](./SecureFileCopy.md)
+[SSH Connection](./SSHUse.md)
+[SSH Configuration](SSHConfig.md)
 
 # Configure SSH
 ## Execute Graphical Applications Remotely
