@@ -2,11 +2,11 @@
 Secure Shell (SSH) is a protocol that allows a user to securly access a remote system for tasks such as adminstration and file copy. 
 
 ---
-[SSH Keys](./SSHKeys.md)
-[Secure File Copy (SCP)](./SecureFileCopy.md)
-[SSH Connection](./SSHUse.md)
-[SSH Configuration](SSHConfig.md)
-
+- [SSH Keys](./SSHKeys.md)
+- [Secure File Copy (SCP)](./SecureFileCopy.md)
+- [SSH Connection](./SSHUse.md)
+- [SSH Configuration](SSHConfig.md)
+---
 # Configure SSH
 ## Execute Graphical Applications Remotely
 Enabling X11 Forwarding and Agent Forwarding will allow a user to execute a graphical application on the remote host.
