@@ -6,6 +6,8 @@ The user then uses the private key (Identity) to authenticate to that resource. 
 SSH keys may be used to interactivly access a host or service or can be used to privide authorization and authentication to automated processes.
 This is typically accomplised by creating a key pair without a password. 
 
+[SSH Key Pair Creation]({#ssh-key-pair-creation}
+
 ## Host Keys
 Host keys represent a server's identity and are used by the client to authenticate that server's identity.
 The first time a client accesses a server, the client will prompt the user, displaying a hash of the server's host key and asking the user to expliicitly accept it. 
@@ -45,4 +47,13 @@ dpkg-reconfigure openssh-server
 ```
 - Update ssh client(s) ~/.ssh/known_hosts files with the new hash
 
+## SSH Key pair Creation {#ssh-key-pair-creation}
+Enter the following command to generate a new SSH key pair
+```
+ssh-keygen -t ed25519 -C "alias@example.com"
+```
+or the following for legacy systems
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
 
