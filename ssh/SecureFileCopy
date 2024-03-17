@@ -1,1 +1,9 @@
-
+## Copy a Directory
+The SCP command for recursivly copying a directory from a local path to a remote host.
+```
+scp -r host:path/directory path
+```
+For example:
+```
+scp -r admin@host.domain.com:/home/admin/scripts .
+```
