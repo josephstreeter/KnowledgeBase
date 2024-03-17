@@ -9,6 +9,5 @@ This serves as my personal knowledge base. An online notebook of sorts for infor
 ### Git
 ### SQL
 ### Unifi Networking
+### Home Lab
 ### Home Assistant
-
-[Heading IDs](#heading-ids)
