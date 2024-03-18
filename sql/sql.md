@@ -103,4 +103,8 @@ WHERE TABLE_NAME = 'TableName'
 SELECT COLUMN_NAME + ' ' + DATA_TYPE + '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS varchar) + ')' AS Columns
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'TableName'
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 3f2dc64 (Added SQL query doc)
