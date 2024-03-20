@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQL 
 ---
 [Home](../README.md)
@@ -106,3 +107,11 @@ SELECT COLUMN_NAME + ' ' + DATA_TYPE + '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS va
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'TableName'
 ```
+=======
+<<<<<<< HEAD
+---
+[Home](../README.md)
+=======
+# SQL 
+>>>>>>> b6bb639 (Added Kusto and SQL Queries documents)
+>>>>>>> bdd654e (Adding some files I forgot to save)
