@@ -8,7 +8,10 @@ Group Policy is configuring folder redirection for several profile directories, 
 The following PowerShell code seemed to work to change the directory that $PSModulePath points to and improved performance significantly. Setting the $Profile path to local is also included. This is not really polished or significantly tested. Your mileage may vary. 
 
 ```
+# Update PSModulePath
 $env:PSModulePath = ($env:PSModulePath).replace("\\naf01b.matc.madison.login\ENHome2\Techservices\JStreeter\Documents\PowerShell\Modules","C:\Users\JStreeter\Documents\PowerShell\Modules")
+
+# Update Profile Path
 $ProfilePath = $profile.CurrentUserCurrentHost
 
 if ($ProfilePath -like "\\*")
