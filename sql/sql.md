@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SQL 
 ---
 [Home](../README.md)
@@ -106,14 +105,10 @@ WHERE TABLE_NAME = 'TableName'
 SELECT COLUMN_NAME + ' ' + DATA_TYPE + '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS varchar) + ')' AS Columns
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'TableName'
+```
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
-```
-=======
-```
->>>>>>> 3f2dc64 (Added SQL query doc)
-=======
-```
 =======
 <<<<<<< HEAD
 ---
@@ -122,4 +117,10 @@ WHERE TABLE_NAME = 'TableName'
 # SQL 
 >>>>>>> b6bb639 (Added Kusto and SQL Queries documents)
 >>>>>>> bdd654e (Adding some files I forgot to save)
->>>>>>> 56bd043 (Resolving merge conflicts with origin - again)
+=======
+---
+[Home](../README.md)
+>>>>>>> a8535f7 (Resolving merge conflicts)
+=======
+>>>>>>> 9d01f16 (Resolving merge conflicts - sql)
+>>>>>>> d9ff9a2 (Resolving merge conflicts with origin - SQL)
