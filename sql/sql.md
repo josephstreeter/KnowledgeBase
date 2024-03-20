@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SQL 
 ---
 [Home](../README.md)
@@ -115,3 +114,7 @@ WHERE TABLE_NAME = 'TableName'
 # SQL 
 >>>>>>> b6bb639 (Added Kusto and SQL Queries documents)
 >>>>>>> bdd654e (Adding some files I forgot to save)
+=======
+---
+[Home](../README.md)
+>>>>>>> a8535f7 (Resolving merge conflicts)
