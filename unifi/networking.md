@@ -29,8 +29,4 @@
 
 ## Firewall Rules
 
-
-
-## Firewall Rules
-
 ## Guest Network
