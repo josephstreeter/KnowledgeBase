@@ -9,18 +9,18 @@ function Remove-ADObjectACE()
     Param
     (
         $ADObject,
-        $SecGroup
+        $SecPrincipal
     )
 
-    Write-Output ("Removing {0} from {1}" -f $SecGroup, $ADObject.name)
+    Write-Output ("Removing {0} from {1}" -f $SecPrincipal, $ADObject.name)
     Try
     {
         $Acl=(get-acl -path $ADObject.distinguishedname)
-        $Ace = $Acl.access | ?{ $_.IsInherited -eq $false -and $_.IdentityReference -eq $SecGroup }
+        $Ace = $Acl.access | ?{ $_.IsInherited -eq $false -and $_.IdentityReference -eq $SecPrincipal }
         if ($Ace)
         {
             $Acl.RemoveAccessRule($ace)
-            Set-Acl -Path $Group.DistinguishedName -AclObject $Acl -ErrorAction Stop
+            Set-Acl -Path $ADObject.DistinguishedName -AclObject $Acl -ErrorAction Stop
             Return
         }
         else
@@ -35,11 +35,11 @@ function Remove-ADObjectACE()
 }
 
 
-$SecGroup = "AD\Domain Admins"
-$Groups = Get-ADGroup -Filter * -SearchBase "OU=groups,OU=managed,DC=ad,DC=domain,DC=com"
+$SecPrincipal = "AD\Domain Admins"
+$ADObjects = Get-ADGroup -Filter * -SearchBase "OU=groups,OU=managed,DC=ad,DC=domain,DC=com"
 
-foreach ($Group in $Groups)
+foreach ($ADObject in $ADObjects)
 {
-    Remove-ADObjectACE -ADObject $Group -SecGroup $SecGroup -ErrorAction Stop
+    Remove-ADObjectACE -ADObject $ADObject -SecPrincipal $SecPrincipal -ErrorAction Stop
 }
 ```
