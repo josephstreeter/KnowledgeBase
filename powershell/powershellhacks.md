@@ -12,6 +12,7 @@ The following PowerShell code seemed to work to change the directory that $PSMod
 $env:PSModulePath = ($env:PSModulePath).replace("\\naf01b.matc.madison.login\ENHome2\Techservices\JStreeter\Documents\PowerShell\Modules","C:\Users\JStreeter\Documents\PowerShell\Modules")
 
 # Update Profile Path
+$env:PSModulePath = ($env:PSModulePath).replace("\\naf01b.matc.madison.login\ENHome2\Techservices\JStreeter\Documents\PowerShell\Modules","C:\Users\JStreeter\Documents\PowerShell\Modules")
 $ProfilePath = $profile.CurrentUserCurrentHost
 
 if ($ProfilePath -like "\\*")
