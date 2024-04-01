@@ -50,4 +50,3 @@ services:
       - "1880:1880"
     volumes:
       - /docker/node-red/:/data
-(END)

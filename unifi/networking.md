@@ -1,6 +1,12 @@
-# Networking
+# Networks
 
+- [Home](../README.md)
+- [Unifi](./unifi.md)
+
+---
 ## VLANS/Subnets
+The following tables outline the separate subnets/VLANS used for each site. 
+
 ### Fall River
 |Name     |VLAN |Subnet             |Description      |
 |---------|-----|-------------------|-----------------|
@@ -16,7 +22,7 @@
 
 ### Oconto
 |Name     |VLAN |Subnet             |Description      |
-|---------|-------------------------|-----------------|
+|---------|-----|-------------------|-----------------|
 |Default  |1    |192.168.128.0/24   |Native VLAN      |
 |Trusted  |1129 |192.168.129.0/24   |Trusted hosts    | 
 |Secure   |1130 |192.168.130.0/24   |"Work" hosts     |

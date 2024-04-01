@@ -1,5 +1,4 @@
 # Secure Shell - SSH
----
 [Home](../README.md)
 
 ---

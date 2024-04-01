@@ -1,5 +1,4 @@
 # SQL 
----
 [Home](../README.md)
 
 ---
