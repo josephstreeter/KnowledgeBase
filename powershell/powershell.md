@@ -1,5 +1,8 @@
 # PowerShell
----
+
 [Home](../README.md)
-=======
-[PowerShell Hacks](./powershellhacks.md)
+
+---
+
+- [PowerShell Runspaces](./powershellrunspaces.md)
+- [PowerShell Hacks](./powershellhacks.md)
