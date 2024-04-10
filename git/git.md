@@ -112,6 +112,19 @@ $ git push --set-upsteam origin <branch name>
 $ git switch main
 $ git merge <branch name>
 ```
+
+## SSH
+VS Code works best with SSH for cloning. 
+### Config File
+The following config file will allow you to specify a specific SSH key for authenticating to Azure DevOps:
+```
+Host vs-ssh.visualstudio.com
+    HostName vs-ssh.visualstudio.com
+    IdentityFile ~/.ssh/id_rsa_ado
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentitiesOnly yes
+```
 ## References
 [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 [Learn Git Rebase in 6 minutes // explained with live animations!](https://youtu.be/f1wnYdLEpgI?si=SXW3BsP7Yqn_AIEd)
