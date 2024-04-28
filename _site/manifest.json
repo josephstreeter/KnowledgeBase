@@ -1,0 +1,535 @@
+{
+  "source_base_path": "/home/hades/Documents/repos/KnowledgeBase",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/RTL-SDR/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/RTL-SDR/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ansible/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ansible/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/docker/dockercompose.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/docker/dockercompose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/docker/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/docker/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/docker/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/docker/install.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/git/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/git/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/automations.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/automations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/deployment.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/deployment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/groups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/guidlines.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/guidlines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/sensors.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/sensors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homeassistant/templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homeassistant/templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/homelab/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/homelab/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kql/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kql/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/01-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/01-summary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/02-concepts.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/02-concepts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/04-install-clients.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/04-install-clients.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/05-command-line.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/05-command-line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/06-gpg4win.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/06-gpg4win.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/07-advanced.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/07-advanced.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/08-conclusion.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/08-conclusion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/09-references.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/09-references.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/pgp/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pgp/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/powershell/activedirectory.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/powershell/activedirectory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/powershell/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/powershell/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/powershell/powershellhacks.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/powershell/powershellhacks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/powershell/powershellrunspaces.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/powershell/powershellrunspaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/sql/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/sql/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/sql/sqlqueries.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/sql/sqlqueries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/SSHConfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/SSHConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/SSHForwarding.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/SSHForwarding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/SSHKeys.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/SSHKeys.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/SSHUse.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/SSHUse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/SecureFileCopy.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/SecureFileCopy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssh/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssh/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/terraform/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/terraform/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/terraform/proxmox.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/terraform/proxmox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unifi/802.1x.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unifi/802.1x.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unifi/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unifi/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unifi/networking.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unifi/networking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vscode/configure.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vscode/configure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vscode/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vscode/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vscode/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vscode/install.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vscode/vscodeinstall.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vscode/vscodeinstall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

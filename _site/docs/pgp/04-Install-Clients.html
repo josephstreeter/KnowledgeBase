@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Install Clients | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Install Clients | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/pgp/04-Install-Clients.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="install-clients">Install Clients</h1>
+
+<ul>
+<li><a href="02-Concepts.html">Concepts</a></li>
+<li><a href="04-Install-Clients.html">Install Clients</a></li>
+</ul>
+<hr>
+<h2 id="gpg-linux">GPG (Linux)</h2>
+<h3 id="redhatcentos">Redhat/CentOS</h3>
+<pre><code>$ sudo yum install gnupg
+</code></pre>
+<h3 id="debianubuntu">Debian/Ubuntu</h3>
+<pre><code>$ sudo apt update
+$ sudo apt install gnupg
+</code></pre>
+<h2 id="gpg4win-windows">GPG4Win (Windows)</h2>
+<p>Download: <a href="http://gpg4win.org/download.html">http://gpg4win.org/download.html</a></p>
+<p>Make sure that Kleopatra and GNU Privacy Assistant (GPA) are installed. GPA is not selected as an option by default. Either Kleopatra or GPA can be used to encrypt and decrypt messages.</p>
+<ol>
+<li>Choose your language, click &quot;Ok&quot;</li>
+</ol>
+<p><a href="http://www.deepdotweb.com/wp-content/uploads/2015/02/SUJ3aT21.png"><img src="RackMultipart20211128-4-dbovmn_html_e53115da50210aaf.png" alt=""></a></p>
+<ol>
+<li>Click &quot;Next&quot;, then &quot;Next&quot; again. You&quot;ll now be at a screen asking what components you want to install. We'll be selecting &quot;Kleopatra&quot;, &quot;GpgEX&quot;, and &quot;Gpg4win Compendium&quot;. Then click &quot;Next&quot;</li>
+</ol>
+<p><a href="http://www.deepdotweb.com/wp-content/uploads/2015/02/oNLB4Kk1.png"><img src="RackMultipart20211128-4-dbovmn_html_b2b6267a689e4d14.png" alt=""></a></p>
+<ol>
+<li>It will ask where to install, just keep the default and click &quot;Next&quot;</li>
+<li>Now it'll ask where you want to install shortcuts. Select whichever you want, click &quot;Next&quot;</li>
+<li>You can choose which Start Menu folder you want it installed in, just click &quot;Next&quot;</li>
+<li>It will now install, when done you should see this. Click &quot;Next&quot;, then &quot;Finish&quot; <a href="http://www.deepdotweb.com/wp-content/uploads/2015/02/RYUfaj41.png"><img src="RackMultipart20211128-4-dbovmn_html_6e4d881d85af9aa2.png" alt=""></a></li>
+</ol>
+<h2 id="gnupggnu-privacy-assistant-linux">GnuPG/Gnu Privacy Assistant (Linux)</h2>
+<p>Like I said in the intro, we'll be using GnuPG with Gnu Privacy Assistant. I like GPA as a graphical front-end because its layout is really easy to understand and follow.</p>
+<ol>
+<li>Open up Terminal</li>
+<li>Type, without quotes, 'sudo apt-get install gpa gnupg2', then hit 'enter'</li>
+<li>Enter your password, hit 'enter'</li>
+<li>It will pull the dependancies needed for both to work properly, tell you the space needed, and ask you to confirm. Type 'y' then hit 'enter' to confirm</li>
+<li>Wait a bit as everything installs</li>
+</ol>
+<p>This should only take a few minutes to complete. See this picture to confirm you're doing the steps correctly:</p>
+<p><a href="https://www.deepdotweb.com/wp-content/uploads/2015/02/TVjAVPp1.png"><img src="RackMultipart20211128-4-dbovmn_html_64f646618718b6c2.png" alt=""></a></p>
+<h2 id="iphone-ipgmail">iPhone (IPGMail)</h2>
+<p>&amp;lt;…&amp;gt;</p>
+<h2 id="mac-os-gpg-suite">Mac OS (GPG Suite)</h2>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/pgp/04-Install-Clients.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
