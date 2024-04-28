@@ -14,6 +14,22 @@ $ git config –global alias.bb !script.sh
 $ git config --global user.name First I Last
 $ git config --global user.email first.last@gmail.com
 ```
+When creating a new branch from the CLI, you may see the following message:
+```
+$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/hades/Documents/repos/AzureTerraform/.git/
+$ git config --global intit.defaultBranch main
+```
 ### Conditional Configs
 Separate config for git based on where the files are located. 
 ```
@@ -95,6 +111,19 @@ $ git commit -m “<commit message>”
 $ git push --set-upsteam origin <branch name>
 $ git switch main
 $ git merge <branch name>
+```
+
+## SSH
+VS Code works best with SSH for cloning. 
+### Config File
+The following config file will allow you to specify a specific SSH key for authenticating to Azure DevOps:
+```
+Host vs-ssh.visualstudio.com
+    HostName vs-ssh.visualstudio.com
+    IdentityFile ~/.ssh/id_rsa_ado
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentitiesOnly yes
 ```
 ## References
 [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)

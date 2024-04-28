@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Windows (GPG4Win) | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Windows (GPG4Win) | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/pgp/06-gpg4win.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="windows-gpg4win">Windows (GPG4Win)</h1>
+
+<hr>
+<h2 id="install">Install</h2>
+<p>Download: <a href="http://gpg4win.org/download.html">http://gpg4win.org/download.html</a>
+Make sure that Kleopatra and GNU Privacy Assistant (GPA) are installed. GPA is not selected as an option by default. Either Kleopatra or GPA can be used to encrypt and decrypt messages.</p>
+<ol>
+<li><p>Choose your language, click “Ok”</p>
+</li>
+<li><p>Click “Next”, then “Next” again. You”ll now be at a screen asking what components you want to install. We’ll be selecting “Kleopatra”, “GpgEX”, and “Gpg4win Compendium”. Then click “Next”</p>
+</li>
+<li><p>It will ask where to install, just keep the default and click “Next”</p>
+</li>
+<li><p>Now it’ll ask where you want to install shortcuts. Select whichever you want, click “Next”</p>
+</li>
+<li><p>You can choose which Start Menu folder you want it installed in, just click “Next”</p>
+</li>
+<li><p>It will now install, when done you should see this. Click “Next”, then “Finish”</p>
+</li>
+</ol>
+<h1 id="create-pgp-key-pair">Create PGP Key Pair</h1>
+<h2 id="kleopatra">Kleopatra</h2>
+<p>The next step is to generate your keypair so you can encrypt/decrypt messages. Like always, we’ll be going with 4096 bit RSA. You will create a Public and Private key pair with information related to your identity and email address or addresses. This is important to help others locate your public key on the key server.
+If we were concerned with anonymity, we would make sure that none of the information used in the key pair could be used to reveal our true identity. The e-mail could be a valid alias for an anonymous email service on the DarkNet or complete gibberish.
+Kleopatra should be used to create your key pairs instead of GPA because it will allow you to create a 4096 bit RSA key where GPA will only allow you to create a 2048 bit RSA key.</p>
+<ol>
+<li><p>Open up Kleopatra application</p>
+</li>
+<li><p>Click “File”, then “New Certificate…”</p>
+</li>
+<li><p>In the Certificate Creation Wizard click “Create a personal OpenPGP key pair”</p>
+</li>
+<li><p>Enter your personal information, but do not click Next yet.</p>
+</li>
+<li><p>Click “Advanced Settings…”, and in the Advanced Settings dialog box in the “Key Material” section select the “RSA” radio button, select “4,096 bits” from the drop-down menu, and click “Ok”</p>
+</li>
+<li><p>Verify that the information you entered your information correctly and click “Create Key”</p>
+</li>
+<li><p>Enter a secure passphrase in the “pinentry” dialog box and click “Ok”</p>
+</li>
+<li><p>Kleopatra will now generate the key pair. The random entry of data is used to create entropy. Enter text, move the mouse, etc.</p>
+</li>
+<li><p>Once the key is created, click “Finish”</p>
+</li>
+</ol>
+<h2 id="gpa">GPA</h2>
+<p>Next, you want to make a PGP key. Remember, none of the details need to be valid. I'd use your online name or a different alias when making your key. Something that isn't your gamertag for online games, or anything that may tie to you. A completely new alias. The e-mail doesn't need to be valid at all. Here are some pictures to help you through the process. Also, make a backup of your key!!!
+First, click the keys in the menu at the top. Alternatively, you can click CTRL+N to begin the process of creating a key. Shown here:</p>
+<ol>
+<li><p>You will go through a set-up, where you make a name for your key, which I suggest you use an alias. Shown here:</p>
+</li>
+<li><p>After selecting your alias, it asks for an e-mail address. This e-mail should be non-existent, and be linked to a website that also doesn't exist. Shown here:</p>
+</li>
+<li><p>Then you're asked to make a backup of your key. I highly suggest you do this! Although you can make a back up at any time, you should just do it now. This is where your public key will be that you give to others to contact you. Shown here:</p>
+</li>
+<li><p>Find where you put the back up of your key. It will be an .asc file but no worries, when asked to open the file just tell windows or whatever OS to open it using Notepad. Here you will find a public key similar to this.</p>
+</li>
+<li><p>When sharing your key with others, you want to copy and paste from the beginning dashes to the end dashes. Exactly how I have copied and pasted above.</p>
+</li>
+</ol>
+<h1 id="publish-the-public-key-to-a-key-server">Publish the Public Key to a Key Server</h1>
+<h2 id="kleopatra-1">Kleopatra</h2>
+<p>Add your public key to a public key server so people can find your public key in order to send you secure messages.</p>
+<h2 id="gpa-1">GPA</h2>
+<p>Add your public key to a public key server so people can find your public key in order to send you secure messages. A public key can be published to a key server from GPA by clicking on the “Server” menu and selecting “Send Keys.”</p>
+<h1 id="retrieve-public-keys">Retrieve Public Keys</h1>
+<h2 id="kleopatra-2">Kleopatra</h2>
+<p>In this step we are going to retrieve the public key from the key pair that was just created. By doing this we are able to make the public key available to those that wish to communicate with you securely. Without it, they will not be able to encrypt messages that you are able to decrypt.</p>
+<ol>
+<li><p>In the “My Certificates” tab, right click on your key and click “Export Certificates…”</p>
+</li>
+<li><p>Browse to the location where you want to save the public key and click “Save” (Note: you may want to give it a name that distinguishes this file as your public key)</p>
+</li>
+<li><p>The public key can be viewed in a text editor, like notepad. Browse to the location where you saved the key and open it. (Note: The key will have a “.asc” extension, you may have to select “All files” from the dropdown menu.</p>
+</li>
+<li><p>The text you see in the file is your public key. This is the text that you will send to others so they can import it into their PGP application.</p>
+</li>
+</ol>
+<h2 id="gpa-2">GPA</h2>
+<p>&lt;…&gt;</p>
+<h1 id="obtaining-the-private-key">Obtaining the Private Key</h1>
+<h2 id="kleopatra-3">Kleopatra</h2>
+<p>Similar to obtaining your public key</p>
+<ol>
+<li><p>Right click on your key in the “My Certificates tab and select “Export Secret Keys…”</p>
+</li>
+<li><p>Select the location to save your private key, give it a name, check “ASCII armor”, and click “Ok”<br>
+The following dialog box confirms the export of your private key. (Remember to keep the private key safe and never share it!)</p>
+</li>
+<li></li>
+</ol>
+<h2 id="gpa-3">GPA</h2>
+<p>&lt;…&gt;</p>
+<h1 id="importing-a-public-key">Importing a Public Key</h1>
+<h2 id="kleopatra-4">Kleopatra</h2>
+<p>It’s impossible to send a vendor an encrypted message without their public key. The public key could be sent to you in an email as an attachment or included in the signature block, downloaded from a key server, shared from removable storage, etc.</p>
+<ol>
+<li><p>Receive a public key as a text file through email or other electronic method</p>
+</li>
+<li><p>Copy all text including “—–BEGIN PGP PUBLIC KEY BLOCK—–” and “—–END PGP PUBLIC KEY BLOCK—”</p>
+</li>
+<li><p>In your task bar, right click on the Kleopatra icon, go to “Clipboard”, then click “Certificate Import”</p>
+</li>
+<li><p>If the import worked you should see a window pop up as confirmation, click “Ok”</p>
+</li>
+<li><p>The imported key should now be displayed in Kleopatra under the “Other Certificates” tab</p>
+</li>
+</ol>
+<h2 id="gpa-4">GPA</h2>
+<p>&lt;…&gt;</p>
+<h1 id="importing-the-private-key">Importing the Private Key</h1>
+<h2 id="kleopatra-5">Kleopatra</h2>
+<p>The private key that you will be importing is from a key pair that you have previously created. This private key is used to sign outgoing messages and to decrypt incoming messages. Any host or device that contains your private key should be considered “sensitive” because loss or theft could lead to the compromise of your private key.</p>
+<ol>
+<li><p>Click “File”, “Import Certificates…”</p>
+</li>
+<li><p>Browse to the location where the private key is saved, select it, and click “Open”</p>
+</li>
+<li><p>A window will be displayed confirming the import of the private key. Click “Ok” to contintue.</p>
+</li>
+<li><p>The key information should now be displayed in the “My Certificates” tab</p>
+</li>
+</ol>
+<h2 id="gpa-5">GPA</h2>
+<p>You see people giving their public keys away so others can contact them. Simply open a notepad file, copy and paste their key and import it using the GPA program. I will show you how to do this.
+First make a blank text file and copy the users pubic key to it. Shown here:</p>
+<p>Then, in the Keys menu where you made your key, select import keys. Shown here:</p>
+<h1 id="encrypting-a-message">Encrypting a Message</h1>
+<h2 id="kleopatra-6">Kleopatra</h2>
+<p>To create a message and encrypt it:</p>
+<ol>
+<li><p>Open Notepad and create your message</p>
+</li>
+<li><p>Copy the entire message to the clipboard</p>
+</li>
+<li><p>In your task bar, right click on the Kleopatra icon, go to “Clipboard”, then click “Encrypt…”</p>
+</li>
+<li><p>This gorgeous window will open. Click “Add Recipient…”</p>
+</li>
+<li><p>Another window will appear. Click the “Other Certificates” tab, then select who you want to send your message to, then click “Ok”.</p>
+</li>
+<li><p>You should be back at the previous window with the recipient listed. Click “Next”</p>
+</li>
+<li><p>If all went well, you should see this window. Click “Ok”</p>
+</li>
+<li><p>Your encrypted message will be in your clipboard, all you need to do is paste it into the message box and send</p>
+</li>
+</ol>
+<p>GPA
+&lt;..&gt;</p>
+<h1 id="decrypting-a-message">Decrypting a Message</h1>
+<p>##Kleopatra</p>
+<p>This is just as easy as encrypting.</p>
+<ol>
+<li><p>Copy everything that was sent</p>
+</li>
+<li><p>In your task bar, right click on the Kleopatra icon, go to “Clipboard”, then click “Decrypt/Verify…”</p>
+</li>
+<li><p>A window will pop up asking for your passphrase, enter that then click “Ok”</p>
+</li>
+<li><p>A window should pop up verifying it was decrypted, and copied to your clipboard. Click “Finish”</p>
+</li>
+<li><p>Open your text editor of choice, and paste your message</p>
+</li>
+</ol>
+<h2 id="gpa-6">GPA</h2>
+<p>&lt;…&gt;</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/pgp/06-gpg4win.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

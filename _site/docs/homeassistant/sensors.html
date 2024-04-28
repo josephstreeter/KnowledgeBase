@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/homeassistant/sensors.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="sensors">Sensors</h2>
+<h3 id="template-sensor">Template Sensor</h3>
+<pre><code>- sensor:
+    - name: &quot;AC_On_Window_Open
+      state: &gt;
+         {% if states.binary_sensor.windows.state == 'off' and states.climate.thermostat.state == 'cool'-%}
+         true
+         {%- else -%}
+         false
+         {%- endif %}
+
+</code></pre>
+<pre><code>- sensor:
+   - name: &quot;outdoor_temp&quot;
+     state: &gt;
+       {% if (state_attr('climate.thermostat', 'current_temperature') | float &lt;= states('sensor.oc_temp_upstairs_temperature') | float) %}
+       Open Windows
+       {% else %}
+       Close Windows
+       {% endif %}
+
+</code></pre>
+<pre><code>  - sensor:
+      - name: &quot;Average temperature&quot;
+        unit_of_measurement: &quot;°C&quot;
+        state: &gt;
+          {% set bedroom = states('sensor.bedroom_temperature') | float %}
+          {% set kitchen = states('sensor.kitchen_temperature') | float %}
+
+          {{ ((bedroom + kitchen) / 2) | round(1, default=0) }}
+</code></pre>
+<h3 id="time-of-day">Time of Day</h3>
+<pre><code>- platform: tod
+  name: Night
+  after: sunset
+  before: sunrise
+
+- platform: tod
+  name: Quiet TIme
+  after: '21:00'
+  before: '06:00'
+</code></pre>
+<h3 id="workday">Workday</h3>
+<pre><code>- platform: workday
+  country: US
+  province: WI
+  workdays: [mon, tue, wed, thu, fri]
+</code></pre>
+<h3 id="history-stats">History Stats</h3>
+<pre><code>- platform: history_stats
+  name: Lamp on today
+  entity_id: light.my_lamp
+  state: &quot;on&quot;
+  type: time
+  start: &quot;{{ now().replace(hour=0, minute=0, seconds=0 }}&quot;
+  end: &quot;{{ now() }}
+  
+- platform: history_stats
+  name: Washer Running
+  entity_id: sensor.washer_status
+  state: &quot;running&quot;
+  type: time
+  end: &quot;{{ now() }}&quot;
+  duration:
+    days: 7
+</code></pre>
+<h3 id="utility">Utility</h3>
+<pre><code>- platform: history_stats
+  name: Front Door Motion
+  entity_id: binary_sensor.sensor.motion_front_door
+  state: 'on'
+  end: '{{ now() }}'
+  duration:
+    days: 7
+    
+utility_meter:
+  hourly_frontdoor_motion:
+    source: sensor.front_door_motion
+    cycle: hourly
+  daily_frontdoor_motion:
+    source: sensor.front_door_motion
+    cycle: daily
+</code></pre>
+<h3 id="rest-api">Rest API</h3>
+<pre><code>binary_sensor:
+  - platform: template
+    sensors:
+      nws_alerts_are_active:
+        friendly_name: NWS Alerts Are Active
+        #entity_id: sensor.nws_alerts
+        value_template: &gt;
+          {{ states('sensor.nws_alerts') | int(0) &gt; 0 }}
+        icon_template: &gt;-
+          {% if states('sensor.nws_alerts') | int(0) &gt; 0 %}
+            mdi:weather-lightning
+          {% else %}
+            mdi:weather-sunny
+          {% endif %}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/UPDATE0406/docs/homeassistant/sensors.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
