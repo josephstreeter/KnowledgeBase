@@ -1,4 +1,0 @@
-# PGP
-- [Home](../README.md)
-
----

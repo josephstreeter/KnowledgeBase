@@ -1,4 +1,9 @@
 {
+  "README.html": {
+    "href": "README.html",
+    "title": "Knowledge Base | Crusader Two One",
+    "keywords": "Knowledge Base This serves as my personal knowledge base. An online notebook of sorts for information I would like to store for later use. Topics PowerShell Docker Secure Shell Git SQL Unifi Networking Home Lab Home Assistant Terraform Ansible"
+  },
   "docs/RTL-SDR/index.html": {
     "href": "docs/RTL-SDR/index.html",
     "title": "RTL-SDR | Crusader Two One",
@@ -192,7 +197,7 @@
   "docs/ssh/index.html": {
     "href": "docs/ssh/index.html",
     "title": "Secure Shell - SSH | Crusader Two One",
-    "keywords": "Secure Shell - SSH Secure Shell (SSH) is a protocol that allows a user to securly access a remote system for tasks such as adminstration and file copy. Configure SSH Public Key Authentication"
+    "keywords": "Secure Shell - SSH Secure Shell (SSH) is a protocol that allows a user to securly access a remote system for tasks such as adminstration and file copy."
   },
   "docs/terraform/index.html": {
     "href": "docs/terraform/index.html",
