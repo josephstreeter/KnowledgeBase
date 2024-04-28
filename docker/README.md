@@ -1,4 +1,0 @@
-# Docker
-- [Home](../README.md)
-
----

@@ -1,4 +1,0 @@
-# Ansible
-- [Home](../README.md)
-
----
