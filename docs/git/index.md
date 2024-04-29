@@ -123,14 +123,24 @@ $ git config --global branch.sort -committerdate
 ```
 ### Commits
 ```
+$ git commit -m "Commit message"
+$ git commit -a -m "Commit message"
+$ git --amend 
+```
+Createing commits signed by GPG
+```
 $ git config gpg.format ssh
 $ git config user.signingkey ~/.ssh/key.pub
-$ git --amend 
 ```
 ### Rebase
 ```
+$ git rebase -i HEAD~3 
+```
+Interactive Rebase
+> [!WARNING]
+> Do NOT use interactive rebase on commits that have already been pushed to remote repository
+```
 $ git rebase feature_branch
-$ git rebase -i HEAD~3 * Do NOT use interactive rebase on commits that have already been pushed to remote repository
 ```
 ### Maintenance
 ```
