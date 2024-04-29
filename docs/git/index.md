@@ -1,5 +1,53 @@
 # Git
 ---
+## Workflow
+Generally, the workflow follows the following steps:
+- Get the latest copy of main/master 
+``` 
+git pull 
+```
+- Create an issue/feature branch and switch to that branch
+``` 
+git branch <name>
+git switch <name>
+```
+- Make whatever changes you intend to make. Stage changes an make commits as needed. 
+```
+git add *
+git commit -m "<message describing change>"
+```
+- Push changes to the origin branch. You must create the origin branch if it doesn't already exist. 
+```
+git push
+
+# or
+
+git push --set-upstream origin
+```
+- Create a Pull Request in GitHub or ADO. Approval of this PR will merge the changes with main/master.
+
+## Resolving Merge Conflicts
+- Edit each of the conflict files to retain the code you want to retain.
+- Stage the updated files and create a commit
+```
+git add * 
+git commit -m 'commit message'
+```
+## Resolving Errors
+#### Divergent Branch Error
+
+***Describe the error***
+```
+git switch <feature branch>
+git rebase main
+
+# If main/master is not protected, you can then merge into that branch. Otherwise, create a PR to merge the changes into main/master.
+git switch main
+git merge feature
+
+
+```
+
 
 ## Snippets
 ### Alias
