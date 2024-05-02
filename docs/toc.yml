@@ -22,6 +22,21 @@
   href: kql/index.md
 - name: Git
   href: git/index.md
+  items: 
+    - name: Terminology
+      href: git/terminology.md
+    - name: Configuration
+      href: git/configuration.md
+    - name: Branching
+      href: git/branching.md
+    - name: Rebaseing
+      href: git/rebaseing.md
+    - name: Resolving Merge Conflicts
+      href: git/resolvingconflicts.md
+    - name: Resolving Errors
+      href: git/resolvingerrors.md
+    - name: SSH
+      href: git/ssh.md
 - name: PGP
   href: pgp/index.md
   items:
