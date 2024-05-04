@@ -1,5 +1,7 @@
 - name: Ansible
   href: ansible/index.md
+- name: DocFx
+  href: docfx/index.md
 - name: Docker
   href: docker/index.md
   items:
@@ -46,6 +48,37 @@
       href: pgp/02-concepts.md
     - name: Installation
       href: pgp/04-install-clients.md
+- name: PowerShell
+  href: powershell/index.md
+  items:
+    - name: Module Development
+      href: powershell/moduledev.md
+    - name: PowerShell Hacks
+      href: powershell/powershellhacks.md
+    - name: PowerShell Runspaces
+      href: powershell/powershellrunspaces.md
+    - name: Active Directory
+      href: powershell/activedirectory.md
+    #- name: Modules
+    #  href: powershell/modules.md
+    #- name: Functions
+    #  href: powershell/functions.md
+    #- name: Scripts
+    #  href: powershell/scripts.md
+    #- name: Variables
+    #  href: powershell/variables.md
+    #- name: Loops
+    #  href: powershell/loops.md
+    #- name: Conditions
+    #  href: powershell/conditions.md
+    #- name: Error Handling
+    #  href: powershell/errorhandling.md
+    #- name: Remote Execution
+    #  href: powershell/remoteexecution.md
+    #- name: Security
+    #  href: powershell/security.md
+    #- name: Tips and Tricks
+    #  href: powershell/tipsandtricks.md
 - name: Software Defined Radio
   href: RTL-SDR/index.md
 - name: SQL
