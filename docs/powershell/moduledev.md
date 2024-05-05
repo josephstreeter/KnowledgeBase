@@ -85,3 +85,24 @@ $Params = @{
 
 Invoke-Plaster @Params
 ```
+
+## Create Code for the Module
+When writing the code for the module, write each function in a separate .ps1 file. Place the .ps1 file into the Public or Private directory as needed.
+
+## Build Module
+
+```powershell
+.\build.ps1
+```
+
+## Publish Module
+
+```powershell
+publish-Module
+```
+
+## Publish Module CI/CD
+
+```yaml
+name: build
+```
