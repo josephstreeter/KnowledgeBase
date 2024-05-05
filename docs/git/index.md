@@ -1,61 +1,63 @@
 # Git
 ---
 
+# Concept
+Below is simplified example of a workflow. 
+
+A working tree is created by initializing a directory (git init) or by cloing an exiting repository (git clone "path/to/repository"). Work is then done with the files in the working tree to create a feature or resolve a bug.
+
+At a signigicant point in the work, add your changes to the ***index*** (git add "file name"). Once all of the changes to create the feature or resolve the bug added to the ***index***, the changes are commited to the repository (git commit -m "commit message"). 
+
+```mermaid
+flowchart LR
+A(git) -->|make changes| B(git add) -->|make changes| C(git add) -->|resolved bug| F[git commit]
+```
+
+## Workflow
+Generally, the workflow follows the following steps:
+- Get the latest copy of main/master 
+``` 
+git pull 
+```
+- Create an issue/feature branch and switch to that branch
+``` 
+git branch <name>
+git switch <name>
+```
+- Make whatever changes you intend to make. Stage changes an make commits as needed. 
+```
+git add *
+git commit -m "<message describing change>"
+```
+- Push changes to the origin branch. You must create the origin branch if it doesn't already exist. 
+```
+git push
+
+# or
+
+git push --set-upstream origin
+```
+- Create a Pull Request in GitHub or ADO. Approval of this PR will merge the changes with main/master.
+```mermaid
+gitGraph
+    commit
+    commit
+    branch ISSUE496
+    checkout ISSUE496
+    commit
+    commit
+    checkout main
+    merge ISSUE496
+    commit
+    commit
+```
 ## Snippets
 ### Alias
 ```
 $ git config –global alias.stash ‘stash --all’
 $ git config –global alias.bb !script.sh
 ```
-### Configs
-```
-$ git config --global user.name First I Last
-$ git config --global user.email first.last@gmail.com
-```
-When creating a new branch from the CLI, you may see the following message:
-```
-$ git init
-hint: Using 'master' as the name for the initial branch. This default branch name
-hint: is subject to change. To configure the initial branch name to use in all
-hint: of your new repositories, which will suppress this warning, call:
-hint: 
-hint:   git config --global init.defaultBranch <name>
-hint: 
-hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-hint: 'development'. The just-created branch can be renamed via this command:
-hint: 
-hint:   git branch -m <name>
-Initialized empty Git repository in /home/hades/Documents/repos/AzureTerraform/.git/
-$ git config --global intit.defaultBranch main
-```
-### Conditional Configs
-Separate config for git based on where the files are located. 
-```
-# Configuration for "work" projects
-[include “gitdir:~/projects/work/”]
-path = ~/projects/work/.gitconfig
-```
-```
-# Configuration for "personal" projects
-[include “gitdir:~/projects/personal/”]
-path = ~/projects/personal/.gitconfig
-```
-Below are the contents of the two config files specified above. 
-```
-# Contents of "work" configuration file
-cat ./work/.gitconfig
-[user]
-Email = first.last@work.com
-[commit]
-gpgsign = true
 
-# Contents of "personal" configuration file
-cat ./personal/.gitconfig
-[user]
-Email = first.last@gmail.com
-[commit]
-gpgsign = false
-```
 ### Logs
 ```
 $ git log --oneline
@@ -66,23 +68,17 @@ $ git log -S files -p
 $ git diff
 $ git diff --word-diff
 ```
-### Branches
-```
-$ git branch
-$ git branch --column
-$ git config --global column.ui auto
-$ git config --global branch.sort -committerdate
-```
+
 ### Commits
+```
+$ git commit -m "Commit message"
+$ git commit -a -m "Commit message"
+$ git --amend 
+```
+Createing commits signed by GPG
 ```
 $ git config gpg.format ssh
 $ git config user.signingkey ~/.ssh/key.pub
-$ git --amend 
-```
-### Rebase
-```
-$ git rebase feature_branch
-$ git rebase -i HEAD~3 * Do NOT use interactive rebase on commits that have already been pushed to remote repository
 ```
 ### Maintenance
 ```
@@ -109,19 +105,6 @@ $ git commit -m “<commit message>”
 $ git push --set-upsteam origin <branch name>
 $ git switch main
 $ git merge <branch name>
-```
-
-## SSH
-VS Code works best with SSH for cloning. 
-### Config File
-The following config file will allow you to specify a specific SSH key for authenticating to Azure DevOps:
-```
-Host vs-ssh.visualstudio.com
-    HostName vs-ssh.visualstudio.com
-    IdentityFile ~/.ssh/id_rsa_ado
-    HostkeyAlgorithms +ssh-rsa
-    PubkeyAcceptedAlgorithms +ssh-rsa
-    IdentitiesOnly yes
 ```
 ## References
 [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
