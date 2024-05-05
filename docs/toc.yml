@@ -53,8 +53,6 @@
   items:
     - name: Module Development
       href: powershell/moduledev.md
-    - name: PowerShell Hacks
-      href: powershell/powershellhacks.md
     - name: PowerShell Runspaces
       href: powershell/powershellrunspaces.md
     - name: Active Directory
@@ -77,8 +75,8 @@
     #  href: powershell/remoteexecution.md
     #- name: Security
     #  href: powershell/security.md
-    #- name: Tips and Tricks
-    #  href: powershell/tipsandtricks.md
+    - name: Tips and Tricks
+      href: powershell/tipsandtricks.md
 - name: Software Defined Radio
   href: RTL-SDR/index.md
 - name: SQL

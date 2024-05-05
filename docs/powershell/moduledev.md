@@ -48,7 +48,23 @@ The module scaffolding is created by executing the following command:
 Invoke-Plaster -TemplatePath 'C:\path\to\templates\PlasterTemplate'
 ```
 
-The Invoke-Plaster cmdlet will show a number of prompts to which the details of the module can be selected. Another method is to provide the answers to those prompts to the cmdlet at the time of execution. The parameters can easily be splatted as seen below:
+The Invoke-Plaster cmdlet will show a number of prompts to which the details of the module can be selected. 
+
+Stucco Parameters:
+- ModuleName (Name of the Module)
+- Description (Description of the Module)
+- Version (Module Version)
+- FullName (User Full Name)
+- License (License for the Module)
+- CoC (Code of Conduct)
+- MkDocs (MkDocs Support)
+- MkDocsSiteName (MkDocs Repo URL)
+- Classes (Will PowerShell classes be used?)
+- PlatyPS (PlatyPS for documentation?)
+- devcontainer (Use VSCode Dev Container support?)
+- CICD (Include CI/CD support)
+
+Another method is to provide the answers to those prompts to the cmdlet at the time of execution. The parameters can easily be splatted as seen below:
 
 ```powershell
 $Params = @{
@@ -57,9 +73,14 @@ $Params = @{
     Name              = 'NameOfModule'
     Description       = 'Description of the Module'
     Version           = '0.9.0'
-    Author            = 'Author Name'
-    CompanyName       = 'Company Name'
-    PowerShellVersion = '7.4'
+    FullName          = 'Author Name'
+    License           = 'None'
+    CoC               = 'No'
+    MkDocs            = 'No'
+    Classes           = 'Yes'
+    PlatyPS           = 'No'
+    devcontainer      = 'No'
+    CICD              = 'AzurePipelines'
 }
 
 Invoke-Plaster @Params
