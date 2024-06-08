@@ -1,8 +1,10 @@
-## Resolving Errors
-#### Divergent Branch Error
+# Resolving Errors
+
+## Divergent Branch Error
 
 ***Describe the error***
-```
+
+```bash
 git switch <feature branch>
 git rebase main
 

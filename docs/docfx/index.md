@@ -158,7 +158,7 @@ items:
 
 This structure renders as follows:
 
-```
+```text
 Overview
 Reference
 ├─ System.String
@@ -173,7 +173,7 @@ To reference another TOC without embeding it to a parent TOC using nested TOCs, 
 
 Consider the following folder structure:
 
-```
+```text
 toc.yml
 ├─ System
     ├─ toc.yml
@@ -192,7 +192,6 @@ _toc.yml_:
 
 This structure renders as follows:
 
-
 ```yml
 System # Link to the first article in System/toc.yml
 System.Collections  # Link to the first article in System.Collections/toc.yml
@@ -204,7 +203,7 @@ The `toc.yml` file in the `docfx.json` folder will be used to fill the content o
 
 The following example creates a navigation bar with two  _Docs_ and _API_ entries:
 
-```
+```text
 toc.yml
 ├─ docs
     ├─ toc.yml
@@ -222,6 +221,7 @@ _toc.yml_:
 ```
 
 ## Customize the Site
+
 - **Change Site Icon**: -- insert text --
 
 ## References

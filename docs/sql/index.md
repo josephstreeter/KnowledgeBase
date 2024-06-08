@@ -1,9 +1,13 @@
-# SQL 
+# SQL
+
 ---
 
 A place to save the SQL queries that I constantly have to Google.
-### SELECT Statements
+
+## SELECT Statements
+
 ---
+
 ```sql
 SELECT *
 FROM [dbo].[table]
@@ -46,8 +50,10 @@ ON Temp.name=Identities.accountname
 ORDER BY accountName
 ```
 
-### UPDATE Statements
+## UPDATE Statements
+
 ---
+
 ```sql
 UPDATE [dbo].[table]
 SET column='value'
@@ -60,21 +66,27 @@ SET Column = REPLACE(Column,'xx','XX')
 ```
 
 ## INSERT Statements
+
 ---
+
 ```sql
 INSERT INTO [dbo].[table] (column1,column2,column3)
 VALUES ('value1','value2','value3');
 ```
 
-### DELETE Statements
+## DELETE Statements
+
 ---
+
 ```sql
 DELETE FROM [dbo].[table]
 WHERE column = 'value'
 ```
 
-### MERGE Statements
+## MERGE Statements
+
 ---
+
 ```sql
 BEGIN TRAN;
 MERGE Target AS T
@@ -91,16 +103,20 @@ ROLLBACK TRAN;
 GO
 ```
 
-### Copy Table Data
+## Copy Table Data
+
 ---
+
 ```sql
 INSERT INTO dbo.Table2
 SELECT *
 FROM dob.Table1;
 ```
 
-### List Columns in a Table
+## List Columns in a Table
+
 ---
+
 ```sql
 SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH
 FROM INFORMATION_SCHEMA.COLUMNS
@@ -112,4 +128,3 @@ SELECT COLUMN_NAME + ' ' + DATA_TYPE + '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS va
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'TableName'
 ```
-

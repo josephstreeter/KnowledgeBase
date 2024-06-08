@@ -1,17 +1,23 @@
 # Install Clients
+
 ---
+
 ## GPG (Linux)
+
 ### Redhat/CentOS
-```
-$ sudo yum install gnupg
-```
-### Debian/Ubuntu
-```
-$ sudo apt update
-$ sudo apt install gnupg
+
+```bash
+sudo yum install gnupg
 ```
 
-# [GPG4Win (Windows)](#tab/windows)
+### Debian/Ubuntu
+
+```bash
+sudo apt update
+sudo apt install gnupg
+```
+
+## [GPG4Win (Windows)](#tab/windows)
 
 Download: [http://gpg4win.org/download.html](http://gpg4win.org/download.html)
 
@@ -30,7 +36,7 @@ Make sure that Kleopatra and GNU Privacy Assistant (GPA) are installed. GPA is n
 3. You can choose which Start Menu folder you want it installed in, just click &quot;Next&quot;
 4. It will now install, when done you should see this. Click &quot;Next&quot;, then &quot;Finish&quot; [![](RackMultipart20211128-4-dbovmn_html_6e4d881d85af9aa2.png)](http://www.deepdotweb.com/wp-content/uploads/2015/02/RYUfaj41.png)
 
-# [GnuPG/Gnu Privacy Assistant (Linux)](#tab/linux)
+## [GnuPG/Gnu Privacy Assistant (Linux)](#tab/linux)
 
 Like I said in the intro, we&#39;ll be using GnuPG with Gnu Privacy Assistant. I like GPA as a graphical front-end because its layout is really easy to understand and follow.
 
@@ -44,10 +50,12 @@ This should only take a few minutes to complete. See this picture to confirm you
 
 [![](RackMultipart20211128-4-dbovmn_html_64f646618718b6c2.png)](https://www.deepdotweb.com/wp-content/uploads/2015/02/TVjAVPp1.png)
 
-# [iPhone (IPGMail)](#tab/iphone)
+## [iPhone (IPGMail)](#tab/iphone)
 
-\&lt;…\&gt;
+Coming soon....
 
-# [Mac OS (GPG Suite)](#tab/macos)
+## [Mac OS (GPG Suite)](#tab/macos)
+
+Coming soon....
 
 ---

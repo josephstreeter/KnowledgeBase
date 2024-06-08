@@ -1,6 +1,9 @@
 # Home Lab
+
 ---
+
 ## Services
+
 - Proxmox
 - Docker
 - Terraform

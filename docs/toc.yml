@@ -91,6 +91,9 @@
       href: powershell/tipsandtricks.md
 - name: Software Defined Radio
   href: RTL-SDR/index.md
+  items:
+    - name: Installation
+      href: RTL-SDR/installation.md
 - name: SQL
   href: sql/index.md
   items:

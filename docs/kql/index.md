@@ -1,4 +1,5 @@
 # Kusto Query Language
+
 ---
 
 ## Azure Log Analyitics Workspaces

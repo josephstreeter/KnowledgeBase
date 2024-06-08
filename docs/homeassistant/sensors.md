@@ -1,7 +1,8 @@
-## Sensors
+# Sensors
 
-### Template Sensor
-```
+## Template Sensor
+
+```yaml
 - sensor:
     - name: "AC_On_Window_Open
       state: >
@@ -12,7 +13,8 @@
          {%- endif %}
 
 ```
-```
+
+```yaml
 - sensor:
    - name: "outdoor_temp"
      state: >
@@ -23,7 +25,8 @@
        {% endif %}
 
 ```
-```
+
+```yaml
   - sensor:
       - name: "Average temperature"
         unit_of_measurement: "°C"
@@ -34,9 +37,9 @@
           {{ ((bedroom + kitchen) / 2) | round(1, default=0) }}
 ```
 
-### Time of Day
+## Time of Day
 
-```
+```yaml
 - platform: tod
   name: Night
   after: sunset
@@ -48,16 +51,18 @@
   before: '06:00'
 ```
 
-### Workday
-```
+## Workday
+
+```yaml
 - platform: workday
   country: US
   province: WI
   workdays: [mon, tue, wed, thu, fri]
 ```
 
-### History Stats
-```
+## History Stats
+
+```yaml
 - platform: history_stats
   name: Lamp on today
   entity_id: light.my_lamp
@@ -75,8 +80,10 @@
   duration:
     days: 7
 ```
+
 ### Utility
-```
+
+```yaml
 - platform: history_stats
   name: Front Door Motion
   entity_id: binary_sensor.sensor.motion_front_door
@@ -95,7 +102,8 @@ utility_meter:
 ```
 
 ### Rest API
-```
+
+```yaml
 binary_sensor:
   - platform: template
     sensors:
