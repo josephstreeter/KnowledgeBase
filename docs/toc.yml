@@ -48,6 +48,18 @@
       href: pgp/02-concepts.md
     - name: Installation
       href: pgp/04-install-clients.md
+    - name: Command Line
+      href: pgp/05-command-line.md
+    - name: gpg4win
+      href: pgp/06-gpg4win.md
+    - name: Advanced
+      href: pgp/07-advanced.md
+    - name: Conclusion
+      href: pgp/08-conclusion.md
+    - name: References
+      href: pgp/09-references.md
+    - name: Glossary
+      href: pgp/10-glossary.md
 - name: PowerShell
   href: powershell/index.md
   items:
