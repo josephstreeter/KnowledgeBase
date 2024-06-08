@@ -1,18 +1,22 @@
 # PowerShell Tips and Tricks
+
 ---
 The following is a list of tips and tricks that I've used to make the use of PowerShell better in certain situations. 
 
-### Setting Default Parameter Values
+## Setting Default Parameter Values
+
 Use the $PSDefaultParameterValues preference variable to set custom default values for cmdlets and advanced functions that you frequently use. The parameters and the default values are stored as a hash table. 
 
 This feature is useful when you must specify the same parameter value nearly every time you use a cmdlet or when a particular parameter value is difficult to remember, such as an certificate thumbprint or Azure Subscription GUID.
 
 Set a parameter default value:
+
 ```powershell
 $PSDefaultParameterValues=@{“<CmdletName>:<ParameterName>”=”<DefaultValue>”}
 ```
 
 Set several parameter default values:
+
 ```powershell
 $PSDefaultParameterValues=@{
 	“<CmdletName>:<ParameterName1>”=”<DefaultValue>”
@@ -23,6 +27,7 @@ $PSDefaultParameterValues=@{
 ```
 
 Set a parameter default value based on conditions using a script block:
+
 ```powershell
 $PSDefaultParameterValues=@{“<CmdletName>:<ParameterName>”={<ScriptBlock>}}
 ```
@@ -32,6 +37,7 @@ Use the Add() method to add preferences to an existing hash table.
 ```powershell
 $PSDefaultParameterValues.Add({“<CmdletName>:<ParameterName>”,”<DefaultValue>”})
 ```
+
 Use the Remove() method to remove preferences from an existing hash table.
 
 ```powershell
@@ -45,6 +51,7 @@ $PSDefaultParameterValues.Clear()
 ```
 
 Example: Setting Default Parameters for Connect-Exchange Online:
+
 ```powershell
 $PSDefaultParameterValues=@{
 	"Connect-ExchangeOnline:UserPrincipalName"="username@domainname.com"
@@ -69,9 +76,10 @@ $PSDefaultParameterValues["Disabled"]=$True | $False
 ```
 
 ### PowerShell Paths When Using Folder Redirection
+
 Group Policy is configuring folder redirection for several profile directories, including "Documents" where the default $PSModulePath and $Profile is located.  There has been performance issues when using PowerShell remotely over VPN as it takes PowerShell a while to search $PSModulePath to autoload modules. 
 
-The following PowerShell code seemed to work to change the directory that $PSModulePath points to and improved performance significantly. Setting the $Profile path to local is also included. This is not really polished or significantly tested. Your mileage may vary. 
+The following PowerShell code seemed to work to change the directory that $PSModulePath points to and improved performance significantly. Setting the $Profile path to local is also included. This is not really polished or significantly tested. Your mileage may vary.
 
 ```powershell
 # Update Profile Path
