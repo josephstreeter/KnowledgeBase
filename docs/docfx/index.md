@@ -1,6 +1,8 @@
 # DocFx
+
 ---
-# Quick Start
+
+## Quick Start
 
 Build your technical documentation site with docfx. Converts .NET assembly, XML code comment, REST API Swagger files and markdown into rendered HTML pages, JSON model or PDF files.
 
@@ -9,6 +11,7 @@ Build your technical documentation site with docfx. Converts .NET assembly, XML 
 In this section we will build a simple documentation site on your local machine.
 
 > Prerequisites
+>
 > - Familiarity with the command line
 > - Install [.NET SDK](https://dotnet.microsoft.com/en-us/download) 6.0 or higher
 
@@ -24,7 +27,7 @@ To create a new docset, run:
 docfx init
 ```
 
-This command walks you through creating a new docfx project under the current working directory. To build the docset, run: 
+This command walks you through creating a new docfx project under the current working directory. To build the docset, run:
 
 ```bash
 docfx docfx.json --serve
@@ -43,6 +46,7 @@ docfx docfx.json
 Docfx produces static HTML files under the `_site` folder ready for publishing to any static site hosting servers.
 
 To publish to GitHub Pages:
+
 1. [Enable GitHub Pages](https://docs.github.com/en/pages/quickstart).
 2. Upload `_site` folder to GitHub Pages using GitHub actions.
 
@@ -96,6 +100,7 @@ jobs:
 ```
 
 ## Table of Contents
+
 A table of contents (TOC) defines the structure of a set of documents.
 
 ## YAML TOC
@@ -112,7 +117,7 @@ items:
   - href: troubleshooting.md
 ```
 
-TOC node YAML properties: 
+TOC node YAML properties:
 
 - `name`: An optional display name for the TOC node. When not specified, uses the `title` metadata or the first Heading 1 element from the referenced article as the display name.
 - `href`: The path the TOC node leads to. Optional because a node can exist just to parent other nodes.
@@ -158,7 +163,7 @@ items:
 
 This structure renders as follows:
 
-```
+```text
 Overview
 Reference
 ├─ System.String
@@ -173,7 +178,7 @@ To reference another TOC without embeding it to a parent TOC using nested TOCs, 
 
 Consider the following folder structure:
 
-```
+```text
 toc.yml
 ├─ System
     ├─ toc.yml
@@ -192,7 +197,6 @@ _toc.yml_:
 
 This structure renders as follows:
 
-
 ```yml
 System # Link to the first article in System/toc.yml
 System.Collections  # Link to the first article in System.Collections/toc.yml
@@ -204,7 +208,7 @@ The `toc.yml` file in the `docfx.json` folder will be used to fill the content o
 
 The following example creates a navigation bar with two  _Docs_ and _API_ entries:
 
-```
+```text
 toc.yml
 ├─ docs
     ├─ toc.yml
@@ -222,6 +226,7 @@ _toc.yml_:
 ```
 
 ## Customize the Site
+
 - **Change Site Icon**: -- insert text --
 
 ## References

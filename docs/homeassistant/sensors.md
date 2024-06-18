@@ -48,16 +48,18 @@
   before: '06:00'
 ```
 
-### Workday
-```
+# Workday
+
+```text
 - platform: workday
   country: US
   province: WI
   workdays: [mon, tue, wed, thu, fri]
 ```
 
-### History Stats
-```
+## History Stats
+
+```yaml
 - platform: history_stats
   name: Lamp on today
   entity_id: light.my_lamp
@@ -75,8 +77,10 @@
   duration:
     days: 7
 ```
-### Utility
-```
+
+## Utility
+
+```yaml
 - platform: history_stats
   name: Front Door Motion
   entity_id: binary_sensor.sensor.motion_front_door
@@ -94,8 +98,9 @@ utility_meter:
     cycle: daily
 ```
 
-### Rest API
-```
+## Rest API
+
+```yaml
 binary_sensor:
   - platform: template
     sensors:
