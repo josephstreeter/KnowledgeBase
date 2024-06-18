@@ -123,18 +123,18 @@ git reflog * copy the commit hash before the action that deleted
 git branch <branch name> <commit hash>  * branch name = branch name that was deleted, commit hash = past commit hash from previous step
 ```
 
-### Example Workflow
+### Workflow Summary
 
 ```bash
-$ git clone <repo>
-$ git branch <branch name>
-$ git switch <branch name>
+git clone <repo>
+git branch <branch name>
+git switch <branch name>
 <do stuff>
-$ git add *
-$ git commit -m “<commit message>”
-$ git push --set-upsteam origin <branch name>
-$ git switch main
-$ git merge <branch name>
+git add *
+git commit -m “<commit message>”
+git push --set-upsteam origin <branch name>
+git switch main
+git merge <branch name>
 ```
 
 ## References
@@ -148,16 +148,16 @@ $ git merge <branch name>
 
 ### Workflow path and getting out of trouble
 
-```bash
+```text
 git branch feature > git switch feature > (make changes) > git add * > git commit -m 'commit message' > git push > git switch main > git merge feature
 ```
 
-```bash
-if merge confict 
+```text
+# if merge confict 
 -> (edit confict file) -> git add * -> git commit -m 'commit message'
 ```
 
-```bash
+```text
 if divergent branch error
 -> git switch feature -> git rebase main -> git switch main -> git merge feature
 ```
