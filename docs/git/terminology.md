@@ -1,5 +1,6 @@
-## Terminology
-The following will cover a number of terms that will be encountered thoughout the use of Git and related services. The relationship of these terms is somewhat circular, so you may have to read them all and then read them again to understand how they relate to each other. 
+# Terminology
+
+The following will cover a number of terms that will be encountered thoughout the use of Git and related services. The relationship of these terms is somewhat circular, so you may have to read them all and then read them again to understand how they relate to each other.
 
 - **Index** - A staging area where changes are stored before being committed to the ***working tree.***
 - **Working Tree** - The directory, including all its files and sub-directories that make up a repository. The top level of a working tree can be identified by the existence of a .git directory.
@@ -8,4 +9,4 @@ The following will cover a number of terms that will be encountered thoughout th
 - **Repositoy** - A repository is a collection or ***commits*** and defines which one is the ***HEAD***.
 - **Branch** - A name for a ***commit*** and it's parentage that defines history. 
 - **Tag** - Similar to a branch, it names a particular commit and can have it's own description.
-- **Master/Main** - A branch that represents the mainline of development for a repository. Typically known as either ***master*** or ***main***, may also be named ***trunk***. 
+- **Master/Main** - A branch that represents the mainline of development for a repository. Typically known as either ***master*** or ***main***, may also be named ***trunk***.
