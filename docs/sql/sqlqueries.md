@@ -1,9 +1,13 @@
-# SQL 
+# SQL
+
 ---
 
 A place to save the SQL queries that I constantly have to Google.
-### SELECT Statements
+
+## SELECT Statements
+
 ---
+
 ```sql
 SELECT *
 FROM [dbo].[table]
@@ -47,7 +51,9 @@ ORDER BY accountName
 ```
 
 ### UPDATE Statements
+
 ---
+
 ```sql
 UPDATE [dbo].[table]
 SET column='value'
@@ -60,21 +66,27 @@ SET Column = REPLACE(Column,'xx','XX')
 ```
 
 ## INSERT Statements
+
 ---
+
 ```sql
 INSERT INTO [dbo].[table] (column1,column2,column3)
 VALUES ('value1','value2','value3');
 ```
 
 ### DELETE Statements
+
 ---
+
 ```sql
 DELETE FROM [dbo].[table]
 WHERE column = 'value'
 ```
 
 ### MERGE Statements
+
 ---
+
 ```sql
 BEGIN TRAN;
 MERGE Target AS T
@@ -92,7 +104,9 @@ GO
 ```
 
 ### Copy Table Data
+
 ---
+
 ```sql
 INSERT INTO dbo.Table2
 SELECT *
@@ -100,7 +114,9 @@ FROM dob.Table1;
 ```
 
 ### List Columns in a Table
+
 ---
+
 ```sql
 SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH
 FROM INFORMATION_SCHEMA.COLUMNS

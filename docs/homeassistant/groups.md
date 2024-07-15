@@ -1,6 +1,8 @@
-### Groups
+# Groups
+
 This group will return "home" if any of the tracked devices are in the house
-```
+
+```yaml
 ### Occupancy #################
 house_occupancy:
   name: occupancy
@@ -11,7 +13,8 @@ house_occupancy:
 ```
 
 This group will return "home" if all tracked devices are in the house
-```
+
+```yaml
 ### Occupancy #################
 house_occupancy:
   name: occupancy

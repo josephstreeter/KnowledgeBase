@@ -1,11 +1,12 @@
 # Docker Install
 
-# [Linux](#tab/linux)
-#### Ubuntu
+## [Linux](#tab/linux)
+
+### Ubuntu
 
 The following command will install Docker on Ubuntu.
 
-```
+```bash
 sudo apt-get install \
     apt-transport-https \
     ca-certificates \
@@ -23,9 +24,13 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-# [Windows](#tab/windows)
-#### Windows 
 
-# [Mac OS](#tab/macos)
-#### Mac OS
+## [Windows](#tab/windows)
+
+### Windows
+
+## [Mac OS](#tab/macos)
+
+### Mac OS
+
 ---
