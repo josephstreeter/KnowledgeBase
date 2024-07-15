@@ -63,30 +63,32 @@
 - name: PowerShell
   href: powershell/index.md
   items:
+    - name: Introduction
+      href: powershell/introduction.md
+    - name: Variables
+      href: powershell/variables.md
+    - name: Functions
+      href: powershell/functions.md
+    - name: Loops
+      href: powershell/loops.md
+    - name: Conditions
+      href: powershell/conditions.md
+    - name: Error Handling
+      href: powershell/errorhandling.md
+    - name: Scripts
+      href: powershell/scripts.md
+    - name: Remote Execution
+      href: powershell/remoteexecution.md
+    - name: Modules
+      href: powershell/modules.md
     - name: Module Development
       href: powershell/moduledev.md
     - name: PowerShell Runspaces
       href: powershell/powershellrunspaces.md
     - name: Active Directory
       href: powershell/activedirectory.md
-    #- name: Modules
-    #  href: powershell/modules.md
-    #- name: Functions
-    #  href: powershell/functions.md
-    #- name: Scripts
-    #  href: powershell/scripts.md
-    #- name: Variables
-    #  href: powershell/variables.md
-    #- name: Loops
-    #  href: powershell/loops.md
-    #- name: Conditions
-    #  href: powershell/conditions.md
-    #- name: Error Handling
-    #  href: powershell/errorhandling.md
-    #- name: Remote Execution
-    #  href: powershell/remoteexecution.md
-    #- name: Security
-    #  href: powershell/security.md
+    - name: Security
+      href: powershell/security.md
     - name: Tips and Tricks
       href: powershell/tipsandtricks.md
 - name: Software Defined Radio
