@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Advanced | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Advanced | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/pgp/07-advanced.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="advanced">Advanced</h1>
+
+<hr>
+<h2 id="securely-composing-email">Securely Composing Email</h2>
+<h3 id="metadata">Metadata</h3>
+<p>Metadata provides the context to the content of the email. Protecting the email content (with PGP) will significantly enhance the security of the communication. Frequently, the context (the metadata) is sufficient to learn a great deal about the communication even without the content. Unfortunately, even PGP encrypted email leaves communications metadata exposed, this includes:</p>
+<ul>
+<li>Subject</li>
+<li>To</li>
+<li>From</li>
+<li>Dates and times</li>
+<li>IP addresses</li>
+<li>email application</li>
+</ul>
+<p>Minimizing the contextual information leakage from the email starts with knowing what metadata will be exposed. Where possible, and relevant, take control over that information and unlink it from data linked to you. For example, you can control the From field by creating a new email account. The IP address of the sending email client can be changed by using a VPN, Tor, or a public Internet connection. One option to consider is the use of Tor. The usual caveats about Tor apply: do not rely exclusively on Tor, if you need to protect your IP address then use an IP address that is not attributable to you.</p>
+<h3 id="the-subject">The Subject</h3>
+<p>There is little else you can do about the To, From, and IP, as those are controlled by the infrastructure. However, you have complete control over the Subject. All acceptable subjects are listed below:</p>
+<ul>
+<li>...</li>
+<li>xxx</li>
+<li>;;;</li>
+<li>:::</li>
+<li>&amp;lt;space&amp;gt;</li>
+</ul>
+<p>The Subject must never ever refer to the content of the email, even obliquely. For example, &quot;Subject: Your cocaine has shipped!&quot; is a total email security failure.</p>
+<ul>
+<li><strong>Subjects should be empty</strong>!
+<ul>
+<li>Disable the <em>Warn about empty subject</em> setting on your email client</li>
+</ul>
+</li>
+</ul>
+<h3 id="writing">Writing</h3>
+<p>There are fundamentally two options when composing an email: you can either write the email in a text editor, or in an email client. For security, that is, control over the process, a text editor is safer. For convenience most people will use their email client.</p>
+<ul>
+<li>Safest
+<ul>
+<li>Write in a text editor</li>
+<li>Encrypt on the command line</li>
+<li>Only expose already-encrypted data to the email client</li>
+</ul>
+</li>
+<li>Realistic
+<ul>
+<li>At least restrict the plaintext to the local system you control</li>
+</ul>
+</li>
+</ul>
+<h3 id="drafts">Drafts</h3>
+<ul>
+<li>Don't save Drafts in plaintext</li>
+</ul>
+<p>Drafts can be a significant source of risk. The storage and handling of drafts must be approached with care. Make sure that they are encrypted (never stored in plaintext), that they are stored locally (where you can be sure of deleting them) and that they are deleted after use. Make sure to configure your email client to store drafts locally and to encrypt them before writing them to disk.</p>
+<ul>
+<li>Don't store on server</li>
+<li>Ensure they are encrypted</li>
+<li>Ensure they are deleted after use</li>
+</ul>
+<h3 id="composition">Composition</h3>
+<ul>
+<li>Delete the content in a reply, only quote the relevant parts if necessary</li>
+</ul>
+<p>Mitigate against the potential threat of any single email being compromised by limiting the information within any single email. The more information is stored in the mental context of the correspondents, the less useful the information in the email is to an adversary. Wherever possible minimize the amount of irrelevant contextual information within the email body. Keep it short, simple, and clean.</p>
+<h3 id="attachments">Attachments</h3>
+<ul>
+<li>PGP has all the capability of tar or zip.</li>
+</ul>
+<p>It is possible to include all the files you need to include as a pure PGP messages without having an attachment called secret-leaked-nsa-docs.tar.gz.gpg.asc. The program to use is gpg-zip and it takes both --tar= command line options and gpgcommand line options. Use this to bundle your files and send them as an opaque encrypted blob.</p>
+<h3 id="encrypting">Encrypting</h3>
+<ul>
+<li>use --throw-keys to prevent leaking more metadata</li>
+</ul>
+<p>PGP encryption stores metadata about the decryption keys in the encrypted data. This is a simple optimization to allow the recipient to rapidly determine whether the email can be decrypted by a private key they possess. This information also allows an attacker to determine who can read the email. If the email is intended to be truly anonymous, this metadata must be discarded. Fortunately, there is a gpg command line flag for this: --throw-keys.</p>
+<p>Ensure that --throw-keys is added to the command line when encrypting data.</p>
+<ul>
+<li>PGP/MIME and inline PGP -ear aren't the same.</li>
+</ul>
+<p>For more control and compatibility, use inline PGP.</p>
+<h3 id="sending">Sending</h3>
+<p>Ensure you encrypt by default</p>
+<p>Accidentally sending an unencrypted email is a potentially fatal error. Configure your email client to always encrypt by default. If you want to send a plaintext email, then deliberately set that option.</p>
+<p>Think about signing</p>
+<p>Signing an email provides guarantees that the content was written by someone that possess the private key. That it is, it positively identifies at least one person involved in the email exchange. Think carefully about whether you want to be positively identified as the author of the email. Set your email client to not sign messages by default.</p>
+<p>Sign messages explicitly.</p>
+<p>Store sent messages locally, then delete them</p>
+<p>After the email has been sent and is no longer operationally useful, delete it. To make sure that you can do this, configure your email client to store your <em>Sent</em> messages locally. When in doubt, store locally. At least you will have some control over whether it is thoroughly deleted.</p>
+<h3 id="receiving">Receiving</h3>
+<ul>
+<li>Delete emails after they are no longer necessary</li>
+<li>INBOX ZERO</li>
+<li>OUTBOX ZERO</li>
+<li>DRAFTS ZERO</li>
+<li>TRASH ZERO</li>
+<li>Regularly delete all emails. Easiest way is to set the Trash to erase everything after 30 days, and then delete every email after it has been processed.</li>
+</ul>
+<h3 id="riseupnet-pgp-configuration-guide">Riseup.net PGP Configuration Guide</h3>
+<p>There is a PGP configuration guide from riseup.net. If you want to incorporate their best practice recommendations without any of their terrible advice about using key servers etc, then simply install this gpg.conf into your ~/.gnupg.</p>
+<ul>
+<li><a href="https://github.com/stribika/duraconf/blob/master/configs/gnupg/gpg.conf">gpg.conf</a></li>
+</ul>
+<h3 id="outreach">Outreach</h3>
+<ul>
+<li>Remind your correspondents to practice the same PGP hygiene</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/pgp/07-advanced.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
