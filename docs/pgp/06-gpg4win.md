@@ -18,7 +18,7 @@ Make sure that Kleopatra and GNU Privacy Assistant (GPA) are installed. GPA is n
 
 ## Create PGP Key Pair
 
-## Kleopatra
+### Kleopatra
 
 The next step is to generate your keypair so you can encrypt/decrypt messages. Like always, we’ll be going with 4096 bit RSA. You will create a Public and Private key pair with information related to your identity and email address or addresses. This is important to help others locate your public key on the key server.
 If we were concerned with anonymity, we would make sure that none of the information used in the key pair could be used to reveal our true identity. The e-mail could be a valid alias for an anonymous email service on the DarkNet or complete gibberish.
@@ -41,7 +41,7 @@ Kleopatra should be used to create your key pairs instead of GPA because it will
   
 9. Once the key is created, click “Finish”
   
-## GPA
+### GPA
 
 Next, you want to make a PGP key. Remember, none of the details need to be valid. I'd use your online name or a different alias when making your key. Something that isn't your gamertag for online games, or anything that may tie to you. A completely new alias. The e-mail doesn't need to be valid at all. Here are some pictures to help you through the process. Also, make a backup of your key!!!
 First, click the keys in the menu at the top. Alternatively, you can click CTRL+N to begin the process of creating a key. Shown here:
@@ -58,17 +58,17 @@ First, click the keys in the menu at the top. Alternatively, you can click CTRL+
 
 ## Publish the Public Key to a Key Server
 
-### Kleopatra
+### Kleopatra Key Publish
 
 Add your public key to a public key server so people can find your public key in order to send you secure messages.
 
-### GPA
+### GPA Key Publish
 
 Add your public key to a public key server so people can find your public key in order to send you secure messages. A public key can be published to a key server from GPA by clicking on the “Server” menu and selecting “Send Keys.”
 
-# Retrieve Public Keys
+## Retrieve Public Keys
 
-## Kleopatra
+### Kleopatra Retrieve Public Keys
 
 In this step we are going to retrieve the public key from the key pair that was just created. By doing this we are able to make the public key available to those that wish to communicate with you securely. Without it, they will not be able to encrypt messages that you are able to decrypt.
 
@@ -79,13 +79,13 @@ In this step we are going to retrieve the public key from the key pair that was 
   
 4. The text you see in the file is your public key. This is the text that you will send to others so they can import it into their PGP application.
   
-## GPA
+### GPA Retrieve Public Keys
 
 <…>
 
-# Obtaining the Private Key
+## Obtaining the Private Key
 
-## Kleopatra
+### Kleopatra Obtaining the Private Key
 
 Similar to obtaining your public key
 
@@ -93,15 +93,15 @@ Similar to obtaining your public key
   
 2. Select the location to save your private key, give it a name, check “ASCII armor”, and click “Ok”  
 The following dialog box confirms the export of your private key. (Remember to keep the private key safe and never share it!)
-3. 
+3.
   
-## GPA
+### GPA Obtaining the Private Key
 
 <…>
 
-# Importing a Public Key
+## Importing a Public Key
 
-## Kleopatra
+### Kleopatra Importing a Public Key
 
 It’s impossible to send a vendor an encrypted message without their public key. The public key could be sent to you in an email as an attachment or included in the signature block, downloaded from a key server, shared from removable storage, etc.
 
@@ -114,13 +114,13 @@ It’s impossible to send a vendor an encrypted message without their public key
 
 5. The imported key should now be displayed in Kleopatra under the “Other Certificates” tab  
 
-## GPA
+### GPA Importing a Public Key
 
 <…>
 
-# Importing the Private Key
+## Importing the Private Key
 
-## Kleopatra
+### Kleopatra Importing the Private Key
 
 The private key that you will be importing is from a key pair that you have previously created. This private key is used to sign outgoing messages and to decrypt incoming messages. Any host or device that contains your private key should be considered “sensitive” because loss or theft could lead to the compromise of your private key.
 
@@ -130,16 +130,16 @@ The private key that you will be importing is from a key pair that you have prev
 3. A window will be displayed confirming the import of the private key. Click “Ok” to contintue.
 4. The key information should now be displayed in the “My Certificates” tab
 
-## GPA
+### GPA Importing the Private Key
 
 You see people giving their public keys away so others can contact them. Simply open a notepad file, copy and paste their key and import it using the GPA program. I will show you how to do this.
 First make a blank text file and copy the users pubic key to it. Shown here:
 
 Then, in the Keys menu where you made your key, select import keys. Shown here:
 
-# Encrypting a Message
+## Encrypting a Message
 
-## Kleopatra
+### Kleopatra Encrypting a Message
 
 To create a message and encrypt it:
 
@@ -161,7 +161,7 @@ GPA
 
 ## Decrypting a Message
 
-### Kleopatra
+### Kleopatra Decrypting a Message
 
 This is just as easy as encrypting.
 
@@ -175,6 +175,6 @@ This is just as easy as encrypting.
 
 5. Open your text editor of choice, and paste your message
 
-### GPA
+### GPA Decrypting a Message
 
 <…>
