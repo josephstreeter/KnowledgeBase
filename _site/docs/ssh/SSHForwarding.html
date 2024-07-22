@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Port Forwarding | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Port Forwarding | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/ssh/SSHForwarding.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="port-forwarding">Port Forwarding</h1>
+
+<hr>
+<p>SSH can be used to create secure tunnels for access to applications and services.</p>
+<h2 id="local-forwarding">Local Forwarding</h2>
+<p>Local forwarding is used to forward a port from the client host to a remote host. The user creates a local port on the client host which listens for connections. SSH then tunnels that traffic to the remote host.
+Local forwarding is used for:</p>
+<ul>
+<li>Bypassing a firewall that prevents a protocol or to bypass web content filtering</li>
+<li>Tunnelling sessions or copying files to a remote host through a jump server or bastion host</li>
+<li>Remote access to an internal host or service from an external host</li>
+<li>Connecting to a private resource over a public network</li>
+</ul>
+<p>Local port forwarding is configured using the -L option:</p>
+<pre><code class="lang-bash">ssh -L 80:host.local-domain.com:80 host.remote-domain.com
+</code></pre>
+<p>This example opens a connection to the 'host.remote-domain.com' bastion host, and forwards all connections to port 80 on the local machine, 'host.local-domain.com' to port 80 on 'host.remote-domain.com'.</p>
+<p>By default, anyone (even on different machines) can connect to the specified port on the SSH client machine.
+However, this can be restricted to programs on the same host by supplying a bind address:</p>
+<pre><code class="lang-bash">ssh -L 127.0.0.1:80:host.local-domain.com:80 host.remote-domain.com
+</code></pre>
+<p>The 'LocalForward' option can be used to configure forwarding without having to specify it on command line.</p>
+<h2 id="remote-forwarding">Remote Forwarding</h2>
+<p>Remote forwading is similar to local forwarding except that is initiated from the remote host.</p>
+<p>Remote SSH port forwarding is specified by using the -R option.
+For example:</p>
+<pre><code class="lang-bash">ssh -R 8080:localhost:80 host.domain.com
+</code></pre>
+<p>This example would allow someone remote access to an private service, such as a web server. Remote forwading could be performed by an employee working from home or by an attacker (AKA 'Shoveling Shell') who has established persistant access to the private environment.</p>
+<p>=====&gt; This needs to be rewritten
+By default, OpenSSH only allows connecting to remote forwarded ports from the server host. However, the GatewayPorts option in the server configuration file sshd_config can be used to control this. The following alternatives are possible:</p>
+<pre><code class="lang-text">GatewayPorts no
+</code></pre>
+<p>This prevents connecting to forwarded ports from outside the server computer.</p>
+<pre><code class="lang-text">GatewayPorts yes
+</code></pre>
+<p>This allows anyone to connect to the forwarded ports. If the server is on the public Internet, anyone on the Internet can connect to the port.</p>
+<pre><code class="lang-text">GatewayPorts clientspecified
+</code></pre>
+<p>This means that the client can specify an IP address from which connections to the port are allowed. The syntax for this is:</p>
+<pre><code class="lang-bash">ssh -R 52.194.1.73:8080:localhost:80 host147.aws.example.com
+</code></pre>
+<p>In this example, only connections from the IP address 52.194.1.73 to port 8080 are allowed.</p>
+<h1 id="openssh-also-allows-the-forwarded-remote-port-to-specified-as-0-in-this-case-the-server-will-dynamically-allocate-a-port-and-report-it-to-the-client-when-used-with-the--o-forward-option-the-client-will-print-the-allocated-port-number-to-standard-output">OpenSSH also allows the forwarded remote port to specified as 0. In this case, the server will dynamically allocate a port and report it to the client. When used with the -O forward option, the client will print the allocated port number to standard output.</h1>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/ssh/SSHForwarding.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

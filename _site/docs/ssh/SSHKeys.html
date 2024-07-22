@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SSH Keys | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SSH Keys | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/ssh/SSHKeys.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ssh-keys">SSH Keys</h1>
+
+<hr>
+<p>SSH Keys are asymetric cryprographic keys, or key pairs, that are used for authorization and authentication.
+A key pair consists of a private key (Identification key) and a public key (Authorization key). The owner of a key pair is authorized access to a resource by installing that user's public key (Authorization) on that resource.
+The user then uses the private key (Identity) to authenticate to that resource. The private key is protected by a passowrd or passphrase that only the owner knows. A users private key's are to be protected the same as passwords.</p>
+<p>SSH keys may be used to interactivly access a host or service or can be used to privide authorization and authentication to automated processes.
+This is typically accomplised by creating a key pair without a password.</p>
+<h2 id="host-keys">Host Keys</h2>
+<p>Host keys represent a server's identity and are used by the client to authenticate that server's identity.
+The first time a client accesses a server, the client will prompt the user, displaying a hash of the server's host key and asking the user to expliicitly accept it.</p>
+<pre><code class="lang-bash">$ ssh -t git@ssh.github.com
+The authenticity of host 'ssh.github.com (140.82.114.36)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+</code></pre>
+<p>If the host key stored in 'known_hosts' does not match the one presented to the client by the server the client will promp the usuer, asking if the user wants to continue.</p>
+<pre><code class="lang-text">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+6e:45:f9:a8:af:38:3d:a1:a5:c7:76:1d:02:f8:77:00.
+Please contact your system administrator.
+Add correct host key in /home/hostname /.ssh/known_hosts to get rid of this message.
+Offending RSA key in /var/lib/sss/pubconf/known_hosts:4
+RSA host key for pong has changed and you have requested strict checking.
+Host key verification failed.
+</code></pre>
+<h2 id="change-host-key">Change Host Key</h2>
+<p>Follow these steps to regenerate OpenSSH Host Keys</p>
+<ul>
+<li>Delete old ssh host keys</li>
+</ul>
+<pre><code class="lang-bash">rm /etc/ssh/ssh_host_*
+</code></pre>
+<ul>
+<li>Reconfigure OpenSSH Server</li>
+</ul>
+<pre><code class="lang-bash">dpkg-reconfigure openssh-server
+</code></pre>
+<ul>
+<li>Update ssh client(s) ~/.ssh/known_hosts files with the new hash</li>
+</ul>
+<h2 id="ssh-key-pair-creation">SSH Key pair Creation</h2>
+<p>Enter the following command to generate a new SSH key pair</p>
+<pre><code class="lang-bash">ssh-keygen -t ed25519 -C &quot;alias@example.com&quot;
+</code></pre>
+<p>or the following for legacy systems</p>
+<pre><code class="lang-bash">ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/ssh/SSHKeys.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

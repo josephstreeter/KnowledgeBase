@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Git | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Git | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/git/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="git">Git</h1>
+
+<hr>
+<h2 id="concept">Concept</h2>
+<p>Below is simplified example of a workflow.</p>
+<p>A working tree is created by initializing a directory (git init) or by cloing an exiting repository (git clone &quot;path/to/repository&quot;). Work is then done with the files in the working tree to create a feature or resolve a bug.</p>
+<p>At a signigicant point in the work, add your changes to the <em><strong>index</strong></em> (git add &quot;file name&quot;). Once all of the changes to create the feature or resolve the bug added to the <em><strong>index</strong></em>, the changes are commited to the repository (git commit -m &quot;commit message&quot;).</p>
+<pre><code class="lang-mermaid">flowchart LR
+A(git) --&gt;|make changes| B(git add) --&gt;|make changes| C(git add) --&gt;|resolved bug| F[git commit]
+</code></pre>
+<h2 id="workflow">Workflow</h2>
+<p>Generally, the workflow follows the following steps:</p>
+<ul>
+<li>Get the latest copy of main/master</li>
+</ul>
+<pre><code class="lang-bash">git pull 
+</code></pre>
+<ul>
+<li>Create an issue/feature branch and switch to that branch</li>
+</ul>
+<pre><code class="lang-bash">git branch &lt;name&gt;
+git switch &lt;name&gt;
+</code></pre>
+<ul>
+<li>Make whatever changes you intend to make. Stage changes an make commits as needed.</li>
+</ul>
+<pre><code class="lang-bash">git add *
+git commit -m &quot;&lt;message describing change&gt;&quot;
+</code></pre>
+<ul>
+<li>Push changes to the origin branch. You must create the origin branch if it doesn't already exist.</li>
+</ul>
+<pre><code class="lang-bash">git push
+
+# or
+
+git push --set-upstream origin
+</code></pre>
+<ul>
+<li>Create a Pull Request in GitHub or ADO. Approval of this PR will merge the changes with main/master.</li>
+</ul>
+<pre><code class="lang-mermaid">gitGraph
+    commit
+    commit
+    branch ISSUE496
+    checkout ISSUE496
+    commit
+    commit
+    checkout main
+    merge ISSUE496
+    commit
+    commit
+</code></pre>
+<h2 id="snippets">Snippets</h2>
+<h3 id="alias">Alias</h3>
+<pre><code class="lang-bash">git config –global alias.stash ‘stash --all’
+git config –global alias.bb !script.sh
+</code></pre>
+<h3 id="logs">Logs</h3>
+<pre><code class="lang-bash">git log --oneline
+git log -S files -p
+</code></pre>
+<h3 id="diff">Diff</h3>
+<pre><code class="lang-bash">git diff
+git diff --word-diff
+</code></pre>
+<h3 id="commits">Commits</h3>
+<pre><code class="lang-bash">git commit -m &quot;Commit message&quot;
+git commit -a -m &quot;Commit message&quot;
+git --amend 
+</code></pre>
+<p>Createing commits signed by GPG</p>
+<pre><code class="lang-bash">git config gpg.format ssh
+git config user.signingkey ~/.ssh/key.pub
+</code></pre>
+<h3 id="maintenance">Maintenance</h3>
+<pre><code class="lang-bash">git maintenance start
+</code></pre>
+<h3 id="recover-lost-commit">Recover lost commit</h3>
+<pre><code class="lang-bash">git reflog * copy the commit hash before the action that deleted
+git branch &lt;branch name&gt; &lt;commit hash&gt;  * branch name = new branch name, commit hash = past commit hash from previous step
+</code></pre>
+<h3 id="recover-lost-branch">Recover lost branch</h3>
+<pre><code class="lang-bash">git reflog * copy the commit hash before the action that deleted
+git branch &lt;branch name&gt; &lt;commit hash&gt;  * branch name = branch name that was deleted, commit hash = past commit hash from previous step
+</code></pre>
+<h3 id="workflow-summary">Workflow Summary</h3>
+<pre><code class="lang-bash">git clone &lt;repo&gt;
+git branch &lt;branch name&gt;
+git switch &lt;branch name&gt;
+&lt;do stuff&gt;
+git add *
+git commit -m “&lt;commit message&gt;”
+git push --set-upsteam origin &lt;branch name&gt;
+git switch main
+git merge &lt;branch name&gt;
+</code></pre>
+<h2 id="references">References</h2>
+<p><a href="https://www.youtube.com/watch?v=1SXpE08hvGs">The gitflow workflow - in less than 5 mins</a>
+<a href="https://youtu.be/f1wnYdLEpgI?si=SXW3BsP7Yqn_AIEd">Learn Git Rebase in 6 minutes // explained with live animations!</a>
+<a href="https://youtu.be/zOnwgxiC0OA?si=lgOj1H4bT9dzbK5j">Git MERGE vs REBASE: The Definitive Guide</a>
+<a href="https://youtu.be/Sqsz1-o7nXk?si=acwzXMaLEvkYE-do">Resolve Git MERGE CONFLICTS: The Definitive Guide</a></p>
+<h2 id="notes">Notes</h2>
+<h3 id="workflow-path-and-getting-out-of-trouble">Workflow path and getting out of trouble</h3>
+<pre><code class="lang-text">git branch feature &gt; git switch feature &gt; (make changes) &gt; git add * &gt; git commit -m 'commit message' &gt; git push &gt; git switch main &gt; git merge feature
+</code></pre>
+<pre><code class="lang-text"># if merge confict 
+-&gt; (edit confict file) -&gt; git add * -&gt; git commit -m 'commit message'
+</code></pre>
+<pre><code class="lang-text">if divergent branch error
+-&gt; git switch feature -&gt; git rebase main -&gt; git switch main -&gt; git merge feature
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/git/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

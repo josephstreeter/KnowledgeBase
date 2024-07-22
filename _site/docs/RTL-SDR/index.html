@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Software Defined Radio | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Software Defined Radio | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/RTL-SDR/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="software-defined-radio">Software Defined Radio</h1>
+
+<p>Software Defined Radio using RTL-SDR dongle on Ubuntu Linux</p>
+<p><a href="https://ranous.files.wordpress.com/2016/03/rtl-sdr4linux_quickstartv10-16.pdf">More information</a></p>
+<h2 id="rrl-sdr">RRL-SDR</h2>
+<p>A package for Ubuntu: [<a href="https://launchpad.net/ubuntu/bionic/+package/rtl-sdr">https://launchpad.net/ubuntu/bionic/+...</a>]</p>
+<pre><code class="lang-bash">sudo apt install -y rtl-sdr
+sudo apt install -y sox
+sudo apt install -y multimon-ng
+</code></pre>
+<h2 id="rtl_fm">RTL_FM</h2>
+<p>A cli demodulation tool:
+<a href="http://kmkeen.com/rtl-demod-guide/">http://kmkeen.com/rtl-demod-guide/</a>
+<a href="http://main.lv/writeup/rtlsdr_usage.md">http://main.lv/writeup/rtlsdr_usage.md</a></p>
+<p>Tune in FM Broadcast</p>
+<pre><code class="lang-bash">rtl_fm -M wbfm -f 89.1M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
+</code></pre>
+<p>'-f ...' indicated the frequency to tune to
+-M fm means narrowband FM
+-s 170k means to sample the radio at 170k/sec
+-A fast uses a fast polynominal approximation of arctangent
+-r 32k means to lowpass/resample at 32kHz
+-l 0 disables squelch
+-E deemp applies a deemphesis filter</p>
+<p>Police Scanner</p>
+<pre><code class="lang-bash">rtl_fm -M fm -f 154.42M -f 154.75M -f 154.82M -f 154.89M -s 12k -g 50 -l 70 | play -r 12k ...
+</code></pre>
+<p>-M fm narrowband FM
+-f ... frequency to tune, use multiple times for scanning
+-s 12k sample rate, about as narrow as possible for FM voice
+-g 50 set gain to maximum (use a value appropriate to your dongle)
+-l 70 set squelch to 70. The exact values varies a lot. Changing the gain or sample rate will require a change in the squelch to compensate.</p>
+<p>Scan Airband</p>
+<pre><code class="lang-bash">rtl_fm -M am -f 118M:137M:25k -s 12k -g 50 -l 280 | play -r 12k ...
+</code></pre>
+<p>-M am AM demodulation
+-f start:stop:interval a range of frequencies to scan
+-s 12k same as above
+-g 50 same as above
+-l 280 squelch level, exact value varies a lot</p>
+<p>Pager Decoder</p>
+<pre><code class="lang-bash">rtl_fm -M fm -f 929.77M -s 22050 -g 10 -l 250 | multimon -t raw /dev/stdin
+</code></pre>
+<p>Scan for signals</p>
+<pre><code class="lang-bash">rtl_power -f 76M:108M:125k -i 1 fm_stations.csv
+</code></pre>
+<h2 id="gqrx">GQRX</h2>
+<p>graphical spectrum analyzer: <a href="http://http://gqrx.dk">http://http://gqrx.dk</a>
+To install:</p>
+<pre><code class="lang-bash">sudo apt-get install gqrx-sdr
+</code></pre>
+<h2 id="acars-decoder">ACARS DECODER</h2>
+<p>A realtime aircraft message decoding: <a href="https://github.com/TLeconte/acarsdec">https://github.com/TLeconte/acarsdec</a>
+Check ACARS frequency here: <a href="https://www.acarsd.org/ACARS_frequencies.html">https://www.acarsd.org/ACARS_frequencies.html</a></p>
+<h2 id="dump1090">DUMP1090</h2>
+<p>ADS-B airplane messages DECODER: <a href="https://github.com/antirez/dump1090">https://github.com/antirez/dump1090</a> / <a href="https://www.ads-binfo.com/">https://www.ads-binfo.com/</a></p>
+<h2 id="rtl_433">RTL_433</h2>
+<p>Decoding Low Power devices on unlicensed bands 433MHz/315 MHz/ 868MHz / 915MHz - like keyfobs, meteo/weather stations, sensors sniffer: <a href="https://github.com/merbanan/rtl_433">https://github.com/merbanan/rtl_433</a></p>
+<pre><code class="lang-bash">sudo apt-get install rtl-433
+</code></pre>
+<h2 id="multimon-ng">MULTIMON-NG</h2>
+<p>A multi system DECODER: <a href="https://github.com/EliasOenal/multimon-ng">https://github.com/EliasOenal/multimon-ng</a>
+APRS (Automatic Packet Reporting System) decoding video using MULTIMON-NG  here <a href="https://www.youtube.com/watch?v=CfnrrJwwNU8&amp;t=4s">https://www.youtube.com/watch?v=Cfnrr...</a></p>
+<p>CAPTURING &amp; DECODING SATELLITES with NOAA-APT with simple dipole antenna  - see my other video here : <a href="https://www.youtube.com/watch?v=Fk0WUWd73O8&amp;t=218s">https://www.youtube.com/watch?v=Fk0WU...</a></p>
+<h2 id="ubuntu-1804-and-rtl-sdr-dongle-setup">UBUNTU 18.04 and RTL-SDR Dongle Setup</h2>
+<p>RTLSDR installation on Ubuntu:</p>
+<p>Check if USB RTLSDR is detected and what are Product_ID and Vendor_ID (f.ex. idVendor=0bda, idProduct=2832 )</p>
+<pre><code class="lang-bash">lsusb
+
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 005: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+Bus 001 Device 004: ID 18f8:0f99 [Maxxter] Optical gaming mouse
+Bus 001 Device 003: ID 413c:2003 Dell Computer Corp. Keyboard SK-8115
+Bus 001 Device 008: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T  &lt;---
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+</code></pre>
+<p>Blacklist ordinary DVB-T drivers in Linux Kernel not to interfere with rtlsdr library</p>
+<pre><code class="lang-bash">vi /etc/modprobe.d/blacklist.conf
+</code></pre>
+<p>add in this file  following lines (add line respectively to ProductID value) :</p>
+<pre><code class="lang-bash">blacklist dvb_usb_rtl28xxu 
+blacklist rtl2832 
+blacklist rtl2830
+</code></pre>
+<p>Restart Computer</p>
+<p>Install the RTL-SDR package: <a href="https://launchpad.net/ubuntu/bionic/+package/rtl-sdr">https://launchpad.net/ubuntu/bionic/+...</a></p>
+<pre><code class="lang-bash">sudo apt-get install rtl-sdr
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/RTL-SDR/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

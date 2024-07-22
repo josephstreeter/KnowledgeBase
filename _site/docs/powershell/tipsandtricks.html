@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PowerShell Tips and Tricks | Crusader Two One </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PowerShell Tips and Tricks | Crusader Two One ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/powershell/tipsandtricks.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Crusader Two One">
+            Crusader Two One
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="powershell-tips-and-tricks">PowerShell Tips and Tricks</h1>
+
+<hr>
+<p>The following is a list of tips and tricks that I've used to make the use of PowerShell better in certain situations.</p>
+<h2 id="setting-default-parameter-values">Setting Default Parameter Values</h2>
+<p>Use the $PSDefaultParameterValues preference variable to set custom default values for cmdlets and advanced functions that you frequently use. The parameters and the default values are stored as a hash table.</p>
+<p>This feature is useful when you must specify the same parameter value nearly every time you use a cmdlet or when a particular parameter value is difficult to remember, such as an certificate thumbprint or Azure Subscription GUID.</p>
+<p>Set a parameter default value:</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues=@{“&lt;CmdletName&gt;:&lt;ParameterName&gt;”=”&lt;DefaultValue&gt;”}
+</code></pre>
+<p>Set several parameter default values:</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues=@{
+ “&lt;CmdletName&gt;:&lt;ParameterName1&gt;”=”&lt;DefaultValue&gt;”
+ “&lt;CmdletName&gt;:&lt;ParameterName2&gt;”=”&lt;DefaultValue&gt;”
+ “&lt;CmdletName&gt;:&lt;ParameterName3&gt;”=”&lt;DefaultValue&gt;”
+ “&lt;CmdletName&gt;:&lt;ParameterName4&gt;”=”&lt;DefaultValue&gt;”
+}
+</code></pre>
+<p>Set a parameter default value based on conditions using a script block:</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues=@{“&lt;CmdletName&gt;:&lt;ParameterName&gt;”={&lt;ScriptBlock&gt;}}
+</code></pre>
+<p>Use the Add() method to add preferences to an existing hash table.</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues.Add({“&lt;CmdletName&gt;:&lt;ParameterName&gt;”,”&lt;DefaultValue&gt;”})
+</code></pre>
+<p>Use the Remove() method to remove preferences from an existing hash table.</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues.Remove(“&lt;CmdletName&gt;:&lt;ParameterName&gt;”)
+</code></pre>
+<p>Use the Clear() method to remove all of the preferences from the hash table.</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues.Clear()
+</code></pre>
+<p>Example: Setting Default Parameters for Connect-Exchange Online:</p>
+<pre><code class="lang-powershell">$PSDefaultParameterValues=@{
+ &quot;Connect-ExchangeOnline:UserPrincipalName&quot;=&quot;username@domainname.com&quot;
+ &quot;Connect-ExchangeOnline:ShowBanner&quot;=$false
+ &quot;Connect-ExchangeOnline:ShowProgress&quot;=$false
+}
+</code></pre>
+<p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values?view=powershell-7.4">about_Parameters_Default_Values</a></p>
+<blockquote>
+<p>The $PSDefaultParameterValues preference variable lets you specify custom default values for any cmdlet or advanced function. Cmdlets and advanced functions use the custom default value unless you specify another value in the command.</p>
+<p>The authors of cmdlets and advanced functions set standard default values for their parameters. Typically, the standard default values are useful, but they might not be appropriate for all environments.</p>
+<p>This feature is especially useful when you must specify the same alternate parameter value nearly every time you use the command or when a particular parameter value is difficult to remember, such as an email server name or project GUID.</p>
+<p>If the desired default value varies predictably, you can specify a script block that provides different default values for a parameter under different conditions.</p>
+</blockquote>
+<pre><code class="lang-powershell">$PSDefaultParameterValues=@{&quot;CmdletName:ParameterName&quot;=&quot;DefaultValue&quot;}
+$PSDefaultParameterValues=@{ &quot;CmdletName:ParameterName&quot;={{ScriptBlock}} }
+$PSDefaultParameterValues[&quot;Disabled&quot;]=$True | $False
+</code></pre>
+<h3 id="powershell-paths-when-using-folder-redirection">PowerShell Paths When Using Folder Redirection</h3>
+<p>Group Policy is configuring folder redirection for several profile directories, including &quot;Documents&quot; where the default $PSModulePath and $Profile is located.  There has been performance issues when using PowerShell remotely over VPN as it takes PowerShell a while to search $PSModulePath to autoload modules.</p>
+<p>The following PowerShell code seemed to work to change the directory that $PSModulePath points to and improved performance significantly. Setting the $Profile path to local is also included. This is not really polished or significantly tested. Your mileage may vary.</p>
+<pre><code class="lang-powershell"># Update Profile Path
+$env:PSModulePath = ($env:PSModulePath).replace(&quot;\\host.domain.com\Home\UserName\Documents\PowerShell\Modules&quot;,&quot;C:\Users\UserName\Documents\PowerShell\Modules&quot;)
+$ProfilePath = $profile.CurrentUserCurrentHost
+
+if ($ProfilePath -like &quot;\\*&quot;)
+{
+    Write-Output &quot;ProfilePath is set to $ProfilePath. We will update this to your local profile&quot;
+    $Cmd = &quot;&amp; New-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders' Personal -Value '%USERPROFILE%\Documents' -Type ExpandString -Force&quot;
+
+    $p = Get-Process -Id $PID
+
+    if ($p.processname -eq &quot;pwsh&quot;)
+    {
+        pwsh -noprofile -command $Cmd
+    }
+    else
+    {
+        powershell -noprofile -command $Cmd
+    }
+
+    Write-Output (&quot;Restart {0} to continue&quot; -f $p.processname)
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/josephstreeter/KnowledgeBase/blob/update0722/docs/powershell/tipsandtricks.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
