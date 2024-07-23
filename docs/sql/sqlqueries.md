@@ -8,22 +8,28 @@ A place to save the SQL queries that I constantly have to Google.
 
 ---
 
+Simple select
+
 ```sql
 SELECT *
 FROM [dbo].[table]
 WHERE (column = 'value1') AND (Column = 'value2')
 ```
 
+Select distinct values in a column
+
 ```sql
 SELECT DISTINCT [column]
 FROM [dbo].[table]
 ```
 
+Select the values in a column that exist more then 'N' times
+
 ```sql
 SELECT column1, COUNT(column2)
 FROM [dbo].[table]
 GROUP BY email
-HAVING ( COUNT(email) > 1 )
+HAVING ( COUNT(column2) > 1 )
 ```
 
 ```sql
@@ -54,11 +60,15 @@ ORDER BY accountName
 
 ---
 
+A simple update statement
+
 ```sql
 UPDATE [dbo].[table]
 SET column='value'
 WHERE column='value';
 ```
+
+Find/Replace
 
 ```sql
 UPDATE [dbo].[table]
@@ -69,6 +79,8 @@ SET Column = REPLACE(Column,'xx','XX')
 
 ---
 
+Insert into table
+
 ```sql
 INSERT INTO [dbo].[table] (column1,column2,column3)
 VALUES ('value1','value2','value3');
@@ -78,6 +90,8 @@ VALUES ('value1','value2','value3');
 
 ---
 
+Delete from a table
+
 ```sql
 DELETE FROM [dbo].[table]
 WHERE column = 'value'
@@ -86,6 +100,8 @@ WHERE column = 'value'
 ### MERGE Statements
 
 ---
+
+Update if a record exists and insert if it doesn't
 
 ```sql
 BEGIN TRAN;
@@ -107,6 +123,8 @@ GO
 
 ---
 
+Copy a table into another table
+
 ```sql
 INSERT INTO dbo.Table2
 SELECT *
@@ -116,6 +134,8 @@ FROM dob.Table1;
 ### List Columns in a Table
 
 ---
+
+List the columns of a table
 
 ```sql
 SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH
