@@ -1,21 +1,8 @@
 ---
 _layout: landing
 ---
-# Knowledge Base
+# About Me
 
-This serves as my personal knowledge base. An online notebook of sorts for information I would like to store for later use.  
+I am an IT professional with over 20 years experience. From desktop management and server administration to network engineering. In recent years I have settled primarily in the area of Identity and Access Management.
 
-## Topics
-
----
-
-- PowerShell
-- Docker
-- Secure Shell
-- Git
-- SQL
-- Unifi Networking
-- Home Lab
-- Home Assistant
-- Terraform
-- Ansible
+In addition to my professional work, I do a lot of tinkering around with different technologies. This blog will be a notebook of sorts for home projects and learning efforts.
