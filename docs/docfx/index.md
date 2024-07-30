@@ -1,6 +1,10 @@
 # DocFx
 
----
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Create a New Website](#create-a-new-website)
+- [Publish to GitHub Pages](#publish-to-github-pages)
 
 ## Quick Start
 
