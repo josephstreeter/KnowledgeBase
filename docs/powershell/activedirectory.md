@@ -2,7 +2,7 @@
 
 ---
 
-Remove ACE from a list of object's ACL for a security principal
+Remove Access Control List (ACE) from a list of object's ACL for a security principal
 
 ```powershell
 function Remove-ADObjectACE()
