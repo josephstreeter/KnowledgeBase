@@ -15,18 +15,24 @@
         "files": [
           "images/**"
         ]
+      },
+      {
+        "files": [
+          "styles/*.css"
+        ]
       }
     ],
     "output": "_site",
     "template": [
-      "default",
-      "modern"
+      "default"
     ],
     "globalMetadata": {
-      "_appName": "Crusader Two One",
-      "_appTitle": "Crusader Two One",
+      "_appName": "Madison College Knowledge Base",
+      "_appTitle": "Madison College Knowledge Base",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": true,
+      "_favicon": "docs/knowledgebase/favicon.ico",
+      "_logo": "docs/knowledgebase/logo.svg"
     }
   }
 }

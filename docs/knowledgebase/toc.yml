@@ -1,0 +1,98 @@
+- name: Home
+  href: index.md
+- name: Multi-Factor Authentication (MFA) & Passwordless
+  items:
+    - name: Approve Sign-ins with Authenticator
+      href: KB_MFA_Approve-Signins-with-Authenticator.md
+    - name: Authenticator Recovery
+      href: KB_MFA_Authenticator-Recovery.md
+    - name: Enable Passwordless
+      href: KB_MFA_Enable-Passwordless.md
+    - name: Get Help with MFA
+      href: KB_MFA_Get-Help-with-MFA.md
+    - name: Lost Access to MFA
+      href: KB_MFA_Lost-Access-to-MFA.md
+    - name: Manage Accounts in Authenticator
+      href: KB_MFA_Manage-Accounts-in-Authenticator.md
+    - name: Manage Authentication Methods
+      href: KB_MFA_Manage-Authentication-Methods.md
+    - name: Manage FIDO2 Key
+      href: KB_MFA_Manage-FIDO2-Key.md
+    - name: Overview of Passwordless Options
+      href: KB_MFA_Overview-Passwordless-Options.md
+    - name: Register FIDO2 Key
+      href: KB_MFA_Register-FIDO2-Key.md
+    - name: Register SMS
+      href: KB_MFA_Register-SMS.md
+    - name: Reset MFA Settings
+      href: KB_MFA_Reset-MFA-Settings.md
+    - name: Setup Microsoft Authenticator App
+      href: KB_MFA_Setup-Microsoft-Authenticator-App.md
+    - name: Sign-in with SMS
+      href: KB_MFA_Sign-in-with-SMS.md
+    - name: Sign-in with TAP
+      href: KB_MFA_Sign-in-with-TAP.md
+    - name: Switch to Passwordless
+      href: KB_MFA_Switch-to-Passwordless.md
+    - name: Troubleshoot Authenticator App
+      href: KB_MFA_Troubleshoot-Authenticator-App.md
+    - name: Troubleshoot FIDO2 Key
+      href: KB_MFA_Troubleshoot-FIDO2-Key.md
+    - name: Troubleshoot Passwordless
+      href: KB_MFA_Troubleshoot-Passwordless.md
+    - name: Troubleshoot SMS
+      href: KB_MFA_Troubleshoot-SMS.md
+    - name: Update Phone Number
+      href: KB_MFA_Update-Phone-Number.md
+    - name: Use FIDO2 Key
+      href: KB_MFA_Use-FIDO2-Key.md
+    - name: Use TAP
+      href: KB_MFA_Use-TAP.md
+    - name: What is TAP
+      href: KB_MFA_What-is-TAP.md
+- name: Exchange Online & Mailboxes
+  items:
+    - name: Manage Distribution Group
+      href: KB_ExchangeOnline_Manage-Distribution-Group.md
+    - name: Quota Limit Reached
+      href: KB_ExchangeOnline_Quota-Limit-Reached.md
+    - name: Send-Receive Limits
+      href: KB_ExchangeOnline_Send-Receive-Limits.md
+    - name: Manage Mailbox Size
+      href: KB_ExchangeOnline_Manage-Mailbox-Size.md
+    - name: Request Quota Increase
+      href: KB_ExchangeOnline_Request-Quota-Increase.md
+    - name: Update Contact Info
+      href: KB_ExchangeOnline_Update-Contact-Info.md
+- name: Outlook
+  items:
+    - name: Use OWA Features
+      href: KB_Outlook_Use-OWA-Features.md
+    - name: Automatic Replies
+      href: KB_Outlook_Automatic-Replies.md
+    - name: Add/Remove Account
+      href: KB_Outlook_Add-Remove-Account.md
+    - name: Troubleshoot Connectivity
+      href: KB_Outlook_Troubleshoot-Connectivity.md
+    - name: Manage Folders & Rules
+      href: KB_Outlook_Manage-Folders-Rules.md
+    - name: Report Spam/Phishing
+      href: KB_Outlook_Report-Spam-Phishing.md
+    - name: Setup Windows/Mac/Web/Mobile
+      href: KB_Outlook_Setup-Windows-Mac-Web-Mobile.md
+- name: Shared & Resource Mailboxes
+  items:
+    - name: Send Email from Shared Mailbox
+      href: KB_SharedMailbox_Send-Email.md
+    - name: Access Shared Calendar
+      href: KB_SharedMailbox_Access-Calendar.md
+    - name: Add/Remove Shared Mailbox
+      href: KB_SharedMailbox_Add-Remove.md
+    - name: Request Access to Resource Mailbox
+      href: KB_ResourceMailbox_Request-Access.md
+    - name: Troubleshoot Resource Booking
+      href: KB_ResourceMailbox_Troubleshoot-Booking.md
+    - name: Book Room/Equipment
+      href: KB_ResourceMailbox_Book-Room-Equipment.md
+    - name: Manage Resource Calendar
+      href: KB_ResourceMailbox_Manage-Calendar.md

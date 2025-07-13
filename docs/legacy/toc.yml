@@ -1,0 +1,90 @@
+- name: Knowledgebase
+  href: index.md
+- name: Active Directory
+  items:
+    - name: "Active Directory - Restore Deleted Objects from Recycle Bin"
+      href: KB0010180_Active-Directory-Restore-Deleted-Objects-from-Recycle-Bin.md
+    - name: "Active Directory - Compact Directory Database"
+      href: KB0011585_Active-Directory-Compact-Directory-Database.md
+    - name: "Active Directory - Reset DSRM Password"
+      href: KB0011590_Active-Directory-Reset-DSRM-Password.md
+    - name: "Active Directory - Connect to Another Forest with PowerShell"
+      href: KB0011592_Active-Directory-Connect-to-Another-Forest-with-PowerShell.md
+    - name: "Active Directory - Enable Diagnostic Logging"
+      href: KB0011633_Active-Directory-Enable-Diagnostic-Logging.md
+    - name: "Active Directory - Time Service"
+      href: KB0011634_Active-Directory-Time-Service.md
+- name: Authentication
+  items:
+    - name: "Authentication - Troubleshooting Sign-in Problems (Azure AD)"
+      href: KB0011584_Authentication-Troubleshooting-Sign-in-Problems-Azure-AD.md
+    - name: "Authentication - Access to College Resources from Outside US"
+      href: KB0011588_Authentication-Access-to-College-Resources-from-Outside-US.md
+    - name: "Update UserID After Legal Name Change"
+      href: KB0011652_Update-UserID-After-Legal-Name-Change.md
+    - name: "Authentication - Common PWM SSPR Errors"
+      href: KB0011666_Authentication-Common-PWM-SSPR-Errors.md
+    - name: "Authentication - Privileged Identity Management"
+      href: KB0011668_Authentication-Privileged-Identity-Management.md
+    - name: "Authentication - Setting Up a FIDO2 Token as an Entra ID MFA Method"
+      href: KB0011857_Authentication-Setting-Up-a-FIDO2-Token-as-an-Entra-ID-MFA-Method.md
+    - name: "Authentication - Sign-in Using FIDO2 Token"
+      href: KB0011863_Authentication-Sign-in-Using-FIDO2-Token.md
+- name: Common Problems/Issues
+  items:
+    - name: "Authentication - Troubleshooting Multifactor Authentication"
+      href: KB0011655_Authentication-Troubleshooting-Multifactor-Authentication.md
+    - name: "Entitlements - Request Access to an Access Package"
+      href: KB0011667_Entitlements-Request-Access-to-an-Access-Package.md
+- name: Email
+  items:
+    - name: "Email - How to submit Phish from the Outlook (Windows or Mac) or Web (OWA) client"
+      href: KB0011525_Email-How-to-submit-Phish-from-the-Outlook-Windows-or-Mac-or-Web-OWA-client.md
+    - name: "Email - Supported Email Clients"
+      href: KB0011531_Email-Supported-Email-Clients.md
+    - name: "How to Grant Shared Calendar Permissions"
+      href: KB0011532_How-to-Grant-Shared-Calendar-Permissions.md
+    - name: "Email - How to Add/Remove a Shared Mailbox in Outlook"
+      href: KB0011541_Email-How-to-AddRemove-a-Shared-Mailbox-in-Outlook.md
+    - name: "Email - How to Add a Shared Calendar in Outlook"
+      href: KB0011551_Email-How-to-Add-a-Shared-Calendar-in-Outlook.md
+    - name: "Email - How to Apply Calendar Permissions"
+      href: KB0011572_Email-How-to-Apply-Calendar-Permissions.md
+    - name: "Email - Spam Notification Emails"
+      href: KB0011582_Email-Spam-Notification-Emails.md
+    - name: "Email - Manage Distribution Group Membership"
+      href: KB0011681_Email-Manage-Distribution-Group-Membership.md
+    - name: "Email - How To  Change Outlook Default Calendar Permissions"
+      href: KB0011743_Email-How-To-Change-Outlook-Default-Calendar-Permissions.md
+    - name: "Email - Set Automatic Reply on Shared Mailbox"
+      href: KB0011754_Email-Set-Automatic-Reply-on-Shared-Mailbox.md
+    - name: "Email - Send Email from Shared Mailbox"
+      href: KB0011805_Email-Send-Email-from-Shared-Mailbox.md
+    - name: "Email - Sending Messages to Large Populations"
+      href: KB0011816_Email-Sending-Messages-to-Large-Populations.md
+    - name: "Email - Microsoft Exchange Sending Limits"
+      href: KB0011817_Email-Microsoft-Exchange-Sending-Limits.md
+    - name: "Email - Request New Distribution Group"
+      href: KB0011818_Email-Request-New-Distribution-Group.md
+    - name: "Email - Resolving 500 Error \"Too Many Redirects\" When Signing into Exchange Online"
+      href: KB0011859_Email-Resolving-500-Error-Too-Many-Redirects-When-Signing-into-Exchange-Online.md
+    - name: "Email - Resolving \"Error Downloading the File Content\" When Accessing Attachments in a Shared Mailbo"
+      href: KB0011861_Email-Resolving-Error-Downloading-the-File-Content-When-Accessing-Attachments-in-a-Shared-Mailbo.md
+    - name: "Email - Resolving \"Permission to Send on Behalf\" Error in Shared Mailboxes"
+      href: KB0011878_Email-Resolving-Permission-to-Send-on-Behalf-Error-in-Shared-Mailboxes.md
+    - name: "Calendar Issues Caused by Unsupported Mail Clients"
+      href: KB0011889_Calendar-Issues-Caused-by-Unsupported-Mail-Clients.md
+    - name: "Email - Outlook Error: Data File Has Reached Maximum Size"
+      href: KB0011896_Email-Outlook-Error-Data-File-Has-Reached-Maximum-Size.md
+- name: Middleware
+  items:
+    - name: "IAM Help Desk Tool"
+      href: KB0011587_IAM-Help-Desk-Tool.md
+- name: Other
+  items:
+    - name: "Microsoft Teams Global Messaging Policy Settings"
+      href: KB0011402_Microsoft-Teams-Global-Messaging-Policy-Settings.md
+    - name: "Microsoft Teams Guest Access Settings"
+      href: KB0011405_Microsoft-Teams-Guest-Access-Settings.md
+    - name: "Renewing Microsoft 365 Groups and Teams"
+      href: KB0011876_Renewing-Microsoft-365-Groups-and-Teams.md

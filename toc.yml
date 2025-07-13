@@ -1,2 +1,8 @@
-- name: Knowledge Base
+- name: Home
+  href: index.md
+- name: New Knowledgebase
+  href: docs/knowledgebase/index.md
+- name: Legacy Knowledgebase
+  href: docs/legacy/index.md
+- name: Documentation
   href: docs/

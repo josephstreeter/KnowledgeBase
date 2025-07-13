@@ -12,703 +12,906 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/RTL-SDR/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Manage-Distribution-Group.md",
       "output": {
         ".html": {
-          "relative_path": "docs/RTL-SDR/index.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Manage-Distribution-Group.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/ansible/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Manage-Mailbox-Size.md",
       "output": {
         ".html": {
-          "relative_path": "docs/ansible/index.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Manage-Mailbox-Size.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/docfx/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Quota-Limit-Reached.md",
       "output": {
         ".html": {
-          "relative_path": "docs/docfx/index.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Quota-Limit-Reached.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/docker/dockercompose.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Recover-Deleted-Items.md",
       "output": {
         ".html": {
-          "relative_path": "docs/docker/dockercompose.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Recover-Deleted-Items.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/docker/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Request-Quota-Increase.md",
       "output": {
         ".html": {
-          "relative_path": "docs/docker/index.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Request-Quota-Increase.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/docker/install.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Send-Receive-Limits.md",
       "output": {
         ".html": {
-          "relative_path": "docs/docker/install.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Send-Receive-Limits.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "docs/knowledgebase/KB_ExchangeOnline_Update-Contact-Info.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
+          "relative_path": "docs/knowledgebase/KB_ExchangeOnline_Update-Contact-Info.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/branching.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Approve-Signins-with-Authenticator.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/branching.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Approve-Signins-with-Authenticator.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/configuration.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Authenticator-Recovery.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/configuration.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Authenticator-Recovery.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Enable-Passwordless.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/index.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Enable-Passwordless.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/rebaseing.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Get-Help-with-MFA.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/rebaseing.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Get-Help-with-MFA.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/resolvingconflicts.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Lost-Access-to-MFA.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/resolvingconflicts.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Lost-Access-to-MFA.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/resolvingerrors.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Manage-Accounts-in-Authenticator.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/resolvingerrors.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Manage-Accounts-in-Authenticator.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/ssh.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Manage-Authentication-Methods.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/ssh.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Manage-Authentication-Methods.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/git/terminology.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Manage-FIDO2-Key.md",
       "output": {
         ".html": {
-          "relative_path": "docs/git/terminology.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Manage-FIDO2-Key.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/automations.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Overview-Passwordless-Options.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/automations.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Overview-Passwordless-Options.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/deployment.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Register-FIDO2-Key.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/deployment.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Register-FIDO2-Key.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/groups.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Register-SMS.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/groups.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Register-SMS.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/guidlines.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Reset-MFA-Settings.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/guidlines.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Reset-MFA-Settings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Setup-Microsoft-Authenticator-App.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/index.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Setup-Microsoft-Authenticator-App.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/sensors.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Sign-in-with-SMS.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/sensors.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Sign-in-with-SMS.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homeassistant/templates.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Sign-in-with-TAP.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homeassistant/templates.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Sign-in-with-TAP.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/homelab/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Switch-to-Passwordless.md",
       "output": {
         ".html": {
-          "relative_path": "docs/homelab/index.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Switch-to-Passwordless.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-Authenticator-App.md",
       "output": {
         ".html": {
-          "relative_path": "docs/index.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-Authenticator-App.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-FIDO2-Key.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-FIDO2-Key.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/kql/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-Passwordless.md",
       "output": {
         ".html": {
-          "relative_path": "docs/kql/index.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-Passwordless.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/01-summary.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-SMS.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/01-summary.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Troubleshoot-SMS.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/02-concepts.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Update-Phone-Number.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/02-concepts.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Update-Phone-Number.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/04-install-clients.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Use-FIDO2-Key.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/04-install-clients.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Use-FIDO2-Key.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/05-command-line.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_Use-TAP.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/05-command-line.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_Use-TAP.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/06-gpg4win.md",
+      "source_relative_path": "docs/knowledgebase/KB_MFA_What-is-TAP.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/06-gpg4win.html"
+          "relative_path": "docs/knowledgebase/KB_MFA_What-is-TAP.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/07-advanced.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Add-Remove-Account.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/07-advanced.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Add-Remove-Account.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/08-conclusion.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Automatic-Replies.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/08-conclusion.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Automatic-Replies.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/09-references.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Manage-Folders-Rules.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/09-references.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Manage-Folders-Rules.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/10-glossary.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Report-Spam-Phishing.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/10-glossary.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Report-Spam-Phishing.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/pgp/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Setup-Windows-Mac-Web-Mobile.md",
       "output": {
         ".html": {
-          "relative_path": "docs/pgp/index.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Setup-Windows-Mac-Web-Mobile.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/Functions.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Troubleshoot-Connectivity.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/Functions.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Troubleshoot-Connectivity.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/activedirectory.md",
+      "source_relative_path": "docs/knowledgebase/KB_Outlook_Use-OWA-Features.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/activedirectory.html"
+          "relative_path": "docs/knowledgebase/KB_Outlook_Use-OWA-Features.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/conditions.md",
+      "source_relative_path": "docs/knowledgebase/KB_ResourceMailbox_Book-Room-Equipment.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/conditions.html"
+          "relative_path": "docs/knowledgebase/KB_ResourceMailbox_Book-Room-Equipment.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/errorhandling.md",
+      "source_relative_path": "docs/knowledgebase/KB_ResourceMailbox_Manage-Calendar.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/errorhandling.html"
+          "relative_path": "docs/knowledgebase/KB_ResourceMailbox_Manage-Calendar.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/index.md",
+      "source_relative_path": "docs/knowledgebase/KB_ResourceMailbox_Request-Access.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/index.html"
+          "relative_path": "docs/knowledgebase/KB_ResourceMailbox_Request-Access.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/introduction.md",
+      "source_relative_path": "docs/knowledgebase/KB_ResourceMailbox_Troubleshoot-Booking.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/introduction.html"
+          "relative_path": "docs/knowledgebase/KB_ResourceMailbox_Troubleshoot-Booking.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/loops.md",
+      "source_relative_path": "docs/knowledgebase/KB_SharedMailbox_Access-Calendar.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/loops.html"
+          "relative_path": "docs/knowledgebase/KB_SharedMailbox_Access-Calendar.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/moduledev.md",
+      "source_relative_path": "docs/knowledgebase/KB_SharedMailbox_Add-Remove.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/moduledev.html"
+          "relative_path": "docs/knowledgebase/KB_SharedMailbox_Add-Remove.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/modulerepo.md",
+      "source_relative_path": "docs/knowledgebase/KB_SharedMailbox_Send-Email.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/modulerepo.html"
+          "relative_path": "docs/knowledgebase/KB_SharedMailbox_Send-Email.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/modules.md",
+      "source_relative_path": "docs/knowledgebase/KB_SharedMailbox_Set-Permissions.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/modules.html"
+          "relative_path": "docs/knowledgebase/KB_SharedMailbox_Set-Permissions.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/powershellrunspaces.md",
+      "source_relative_path": "docs/knowledgebase/KB_SharedMailbox_Troubleshoot-Access.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/powershellrunspaces.html"
+          "relative_path": "docs/knowledgebase/KB_SharedMailbox_Troubleshoot-Access.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/powershell/remoteexecution.md",
+      "source_relative_path": "docs/knowledgebase/index.md",
       "output": {
         ".html": {
-          "relative_path": "docs/powershell/remoteexecution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/powershell/scripts.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/powershell/scripts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/powershell/security.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/powershell/security.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/powershell/tipsandtricks.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/powershell/tipsandtricks.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/powershell/variables.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/powershell/variables.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/sql/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/sql/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/sql/sqlqueries.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/sql/sqlqueries.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/SSHConfig.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/SSHConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/SSHForwarding.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/SSHForwarding.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/SSHKeys.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/SSHKeys.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/SSHUse.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/SSHUse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/SecureFileCopy.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/SecureFileCopy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/ssh/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/ssh/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/terraform/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/terraform/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/terraform/proxmox.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/terraform/proxmox.html"
+          "relative_path": "docs/knowledgebase/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
+      "source_relative_path": "docs/knowledgebase/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "docs/toc.html"
+          "relative_path": "docs/knowledgebase/toc.html"
         },
         ".json": {
-          "relative_path": "docs/toc.json"
+          "relative_path": "docs/knowledgebase/toc.json"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/unifi/802.1x.md",
+      "source_relative_path": "docs/legacy/KB0010180_Active-Directory-Restore-Deleted-Objects-from-Recycle-Bin.md",
       "output": {
         ".html": {
-          "relative_path": "docs/unifi/802.1x.html"
+          "relative_path": "docs/legacy/KB0010180_Active-Directory-Restore-Deleted-Objects-from-Recycle-Bin.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/unifi/index.md",
+      "source_relative_path": "docs/legacy/KB0011402_Microsoft-Teams-Global-Messaging-Policy-Settings.md",
       "output": {
         ".html": {
-          "relative_path": "docs/unifi/index.html"
+          "relative_path": "docs/legacy/KB0011402_Microsoft-Teams-Global-Messaging-Policy-Settings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/unifi/networking.md",
+      "source_relative_path": "docs/legacy/KB0011405_Microsoft-Teams-Guest-Access-Settings.md",
       "output": {
         ".html": {
-          "relative_path": "docs/unifi/networking.html"
+          "relative_path": "docs/legacy/KB0011405_Microsoft-Teams-Guest-Access-Settings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/vscode/configure.md",
+      "source_relative_path": "docs/legacy/KB0011525_Email-How-to-submit-Phish-from-the-Outlook-Windows-or-Mac-or-Web-OWA-client.md",
       "output": {
         ".html": {
-          "relative_path": "docs/vscode/configure.html"
+          "relative_path": "docs/legacy/KB0011525_Email-How-to-submit-Phish-from-the-Outlook-Windows-or-Mac-or-Web-OWA-client.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/vscode/index.md",
+      "source_relative_path": "docs/legacy/KB0011531_Email-Supported-Email-Clients.md",
       "output": {
         ".html": {
-          "relative_path": "docs/vscode/index.html"
+          "relative_path": "docs/legacy/KB0011531_Email-Supported-Email-Clients.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/vscode/install.md",
+      "source_relative_path": "docs/legacy/KB0011532_How-to-Grant-Shared-Calendar-Permissions.md",
       "output": {
         ".html": {
-          "relative_path": "docs/vscode/install.html"
+          "relative_path": "docs/legacy/KB0011532_How-to-Grant-Shared-Calendar-Permissions.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/vscode/tipaandtricks.md",
+      "source_relative_path": "docs/legacy/KB0011541_Email-How-to-AddRemove-a-Shared-Mailbox-in-Outlook.md",
       "output": {
         ".html": {
-          "relative_path": "docs/vscode/tipaandtricks.html"
+          "relative_path": "docs/legacy/KB0011541_Email-How-to-AddRemove-a-Shared-Mailbox-in-Outlook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011551_Email-How-to-Add-a-Shared-Calendar-in-Outlook.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011551_Email-How-to-Add-a-Shared-Calendar-in-Outlook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011572_Email-How-to-Apply-Calendar-Permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011572_Email-How-to-Apply-Calendar-Permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011582_Email-Spam-Notification-Emails.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011582_Email-Spam-Notification-Emails.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011584_Authentication-Troubleshooting-Sign-in-Problems-Azure-AD.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011584_Authentication-Troubleshooting-Sign-in-Problems-Azure-AD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011585_Active-Directory-Compact-Directory-Database.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011585_Active-Directory-Compact-Directory-Database.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011587_IAM-Help-Desk-Tool.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011587_IAM-Help-Desk-Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011588_Authentication-Access-to-College-Resources-from-Outside-US.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011588_Authentication-Access-to-College-Resources-from-Outside-US.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011590_Active-Directory-Reset-DSRM-Password.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011590_Active-Directory-Reset-DSRM-Password.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011592_Active-Directory-Connect-to-Another-Forest-with-PowerShell.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011592_Active-Directory-Connect-to-Another-Forest-with-PowerShell.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011633_Active-Directory-Enable-Diagnostic-Logging.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011633_Active-Directory-Enable-Diagnostic-Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011634_Active-Directory-Time-Service.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011634_Active-Directory-Time-Service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011652_Update-UserID-After-Legal-Name-Change.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011652_Update-UserID-After-Legal-Name-Change.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011655_Authentication-Troubleshooting-Multifactor-Authentication.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011655_Authentication-Troubleshooting-Multifactor-Authentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011666_Authentication-Common-PWM-SSPR-Errors.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011666_Authentication-Common-PWM-SSPR-Errors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011667_Entitlements-Request-Access-to-an-Access-Package.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011667_Entitlements-Request-Access-to-an-Access-Package.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011668_Authentication-Privileged-Identity-Management.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011668_Authentication-Privileged-Identity-Management.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011681_Email-Manage-Distribution-Group-Membership.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011681_Email-Manage-Distribution-Group-Membership.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011743_Email-How-To-Change-Outlook-Default-Calendar-Permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011743_Email-How-To-Change-Outlook-Default-Calendar-Permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011754_Email-Set-Automatic-Reply-on-Shared-Mailbox.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011754_Email-Set-Automatic-Reply-on-Shared-Mailbox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011805_Email-Send-Email-from-Shared-Mailbox.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011805_Email-Send-Email-from-Shared-Mailbox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011816_Email-Sending-Messages-to-Large-Populations.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011816_Email-Sending-Messages-to-Large-Populations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011817_Email-Microsoft-Exchange-Sending-Limits.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011817_Email-Microsoft-Exchange-Sending-Limits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011818_Email-Request-New-Distribution-Group.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011818_Email-Request-New-Distribution-Group.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011857_Authentication-Setting-Up-a-FIDO2-Token-as-an-Entra-ID-MFA-Method.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011857_Authentication-Setting-Up-a-FIDO2-Token-as-an-Entra-ID-MFA-Method.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011859_Email-Resolving-500-Error-Too-Many-Redirects-When-Signing-into-Exchange-Online.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011859_Email-Resolving-500-Error-Too-Many-Redirects-When-Signing-into-Exchange-Online.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011861_Email-Resolving-Error-Downloading-the-File-Content-When-Accessing-Attachments-in-a-Shared-Mailbo.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011861_Email-Resolving-Error-Downloading-the-File-Content-When-Accessing-Attachments-in-a-Shared-Mailbo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011863_Authentication-Sign-in-Using-FIDO2-Token.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011863_Authentication-Sign-in-Using-FIDO2-Token.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011876_Renewing-Microsoft-365-Groups-and-Teams.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011876_Renewing-Microsoft-365-Groups-and-Teams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011878_Email-Resolving-Permission-to-Send-on-Behalf-Error-in-Shared-Mailboxes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011878_Email-Resolving-Permission-to-Send-on-Behalf-Error-in-Shared-Mailboxes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011889_Calendar-Issues-Caused-by-Unsupported-Mail-Clients.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011889_Calendar-Issues-Caused-by-Unsupported-Mail-Clients.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011896_Email-Outlook-Error-Data-File-Has-Reached-Maximum-Size.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011896_Email-Outlook-Error-Data-File-Has-Reached-Maximum-Size.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/KB0011896_Email-Outlook-Error-Data-File-Has-Reached-Maximum-Size_new.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/KB0011896_Email-Outlook-Error-Data-File-Has-Reached-Maximum-Size_new.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/legacy/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/legacy/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/legacy/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/legacy/toc.json"
         }
       },
       "version": ""
@@ -719,6 +922,26 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "styles/madison-college-theme.css",
+      "output": {
+        "resource": {
+          "relative_path": "styles/madison-college-theme.css"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "styles/main.css",
+      "output": {
+        "resource": {
+          "relative_path": "styles/main.css"
         }
       },
       "version": ""

@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Knowledge Base","href":"docs/introduction.html","tocHref":"docs/toc.html","topicHref":"docs/introduction.html"}],"pdf":true}
+{"items":[{"name":"Home","href":"index.html","topicHref":"index.html"},{"name":"New Knowledgebase","href":"docs/knowledgebase/index.html","topicHref":"docs/knowledgebase/index.html"},{"name":"Legacy Knowledgebase","href":"docs/legacy/index.html","topicHref":"docs/legacy/index.html"},{"name":"Documentation","href":"docs/"}],"pdf":true}

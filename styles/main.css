@@ -1,0 +1,78 @@
+/* Madison College Theme - Color Scheme */
+.navbar {
+    background-color: green;
+}
+
+.subnav {
+    background-color: blue;
+}
+:root {
+  --mc-navy: #003366;
+  --mc-blue: #0072ce;
+  --mc-white: #ffffff;
+  --mc-gray: #f4f4f4;
+  --mc-accent: #00b2a9;
+}
+body {
+  background-color: var(--mc-gray);
+  color: var(--mc-navy);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--mc-navy);
+}
+a {
+  color: var(--mc-blue);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--mc-accent);
+}
+header, .navbar, .top-nav, .side-nav {
+  background-color: var(--mc-navy) !important;
+  color: var(--mc-white) !important;
+}
+footer {
+  background-color: var(--mc-blue);
+  color: var(--mc-white);
+}
+button, .btn {
+  background-color: var(--mc-accent);
+  color: var(--mc-white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+button:hover, .btn:hover {
+  background-color: var(--mc-blue);
+}
+/* Card and panel styling */
+.panel, .card {
+  background-color: var(--mc-white);
+  border: 1px solid var(--mc-blue);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,51,102,0.08);
+  margin-bottom: 1em;
+}
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--mc-white);
+}
+th, td {
+  border: 1px solid var(--mc-blue);
+  padding: 0.5em;
+}
+th {
+  background-color: var(--mc-blue);
+  color: var(--mc-white);
+}
+/* Misc */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--mc-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mc-blue);
+}
